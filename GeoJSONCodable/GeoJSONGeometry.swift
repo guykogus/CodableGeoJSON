@@ -40,14 +40,24 @@ struct MultiPolygonGeometry: GeoJSONStaticGeometry {
     let coordinates: [PolygonGeometry.Coordinates]
 }
 
-enum GeoJSONGeometry: Codable, Equatable {
+enum GeoJSONGeometry: Equatable {
+    case point(coordinates: PointGeometry.Coordinates)
+    case multiPoint(coordinates: MultiPointGeometry.Coordinates)
+    case lineString(coordinates: LineStringGeometry.Coordinates)
+    case multiLineString(coordinates: MultiLineStringGeometry.Coordinates)
+    case polygon(coordinates: PolygonGeometry.Coordinates)
+    case multiPolygon(coordinates: MultiPolygonGeometry.Coordinates)
+    case geometryCollection(geometries: [GeoJSONGeometry])
+}
+
+extension GeoJSONGeometry: Codable {
     private enum CodingKeys: String, CodingKey {
         case type
         case coordinates
         case geometries
     }
 
-    enum GeometryType: String, Codable {
+    private enum GeometryType: String, Codable {
         case point = "Point"
         case multiPoint = "MultiPoint"
         case lineString = "LineString"
@@ -56,14 +66,6 @@ enum GeoJSONGeometry: Codable, Equatable {
         case multiPolygon = "MultiPolygon"
         case geometryCollection = "GeometryCollection"
     }
-
-    case point(coordinates: PointGeometry.Coordinates)
-    case multiPoint(coordinates: MultiPointGeometry.Coordinates)
-    case lineString(coordinates: LineStringGeometry.Coordinates)
-    case multiLineString(coordinates: MultiLineStringGeometry.Coordinates)
-    case polygon(coordinates: PolygonGeometry.Coordinates)
-    case multiPolygon(coordinates: MultiPolygonGeometry.Coordinates)
-    case geometryCollection(geometries: [GeoJSONGeometry])
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -107,22 +109,24 @@ enum GeoJSONGeometry: Codable, Equatable {
         }
     }
 
-    var type: GeometryType {
-        switch self {
-        case .point(_):
-            return GeometryType.point
-        case .multiPoint(_):
-            return GeometryType.multiPoint
-        case .lineString(_):
-            return GeometryType.lineString
-        case .multiLineString(_):
-            return GeometryType.multiLineString
-        case .polygon(_):
-            return GeometryType.polygon
-        case .multiPolygon(_):
-            return GeometryType.multiPolygon
-        case .geometryCollection(_):
-            return GeometryType.geometryCollection
-        }
+    var type: String {
+        return { () -> GeometryType in
+            switch self {
+            case .point(_):
+                return GeometryType.point
+            case .multiPoint(_):
+                return GeometryType.multiPoint
+            case .lineString(_):
+                return GeometryType.lineString
+            case .multiLineString(_):
+                return GeometryType.multiLineString
+            case .polygon(_):
+                return GeometryType.polygon
+            case .multiPolygon(_):
+                return GeometryType.multiPolygon
+            case .geometryCollection(_):
+                return GeometryType.geometryCollection
+            }
+        }().rawValue
     }
 }

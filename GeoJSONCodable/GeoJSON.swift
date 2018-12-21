@@ -14,10 +14,9 @@ enum GeoJSON: Codable, Equatable {
         case bbox
     }
 
-    enum ObjectType: String, Codable {
+    private enum ObjectType: String, Codable {
         case feature = "Feature"
         case featureCollection = "FeatureCollection"
-        case geometry = "Geometry"
     }
 
     case feature(feature: GeoJSONFeature, boundingBox: [Double]?)
@@ -26,14 +25,14 @@ enum GeoJSON: Codable, Equatable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let type = try container.decode(ObjectType.self, forKey: .type)
+        let type = try container.decode(String.self, forKey: .type)
         let boundingBox = try container.decodeIfPresent([Double].self, forKey: .bbox)
         switch type {
-        case .feature:
+        case ObjectType.feature.rawValue:
             self = .feature(feature: try GeoJSONFeature(from: decoder), boundingBox: boundingBox)
-        case .featureCollection:
+        case ObjectType.featureCollection.rawValue:
             self = .featureCollection(featureCollection: try GeoJSONFeatureCollection(from: decoder), boundingBox: boundingBox)
-        case .geometry:
+        default:
             self = .geometry(geometry: try GeoJSONGeometry(from: decoder), boundingBox: boundingBox)
         }
     }
@@ -54,14 +53,14 @@ enum GeoJSON: Codable, Equatable {
         }
     }
 
-    var type: ObjectType {
+    var type: String {
         switch self {
         case .feature(_, _):
-            return ObjectType.feature
+            return ObjectType.feature.rawValue
         case .featureCollection(_, _):
-            return ObjectType.featureCollection
-        case .geometry(_, _):
-            return ObjectType.geometry
+            return ObjectType.featureCollection.rawValue
+        case .geometry(let geometry, _):
+            return geometry.type
         }
     }
 }
