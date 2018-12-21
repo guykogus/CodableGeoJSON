@@ -19,6 +19,7 @@
 		F883AEFD21CC9F3A0002D830 /* GeoJSONFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AEFC21CC9F3A0002D830 /* GeoJSONFeatureTests.swift */; };
 		F883AEFF21CCA3EE0002D830 /* GeoJSONFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AEFE21CCA3EE0002D830 /* GeoJSONFeatureCollectionTests.swift */; };
 		F883AF0121CCAB0E0002D830 /* GeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF0021CCAB0E0002D830 /* GeoJSONTests.swift */; };
+		F883AF0521CD172A0002D830 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF0421CD172A0002D830 /* GeoJSONStaticFeatureCollectionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F883AEFC21CC9F3A0002D830 /* GeoJSONFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureTests.swift; sourceTree = "<group>"; };
 		F883AEFE21CCA3EE0002D830 /* GeoJSONFeatureCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureCollectionTests.swift; sourceTree = "<group>"; };
 		F883AF0021CCAB0E0002D830 /* GeoJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONTests.swift; sourceTree = "<group>"; };
+		F883AF0421CD172A0002D830 /* GeoJSONStaticFeatureCollectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONStaticFeatureCollectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				F883AEFC21CC9F3A0002D830 /* GeoJSONFeatureTests.swift */,
 				F883AEFE21CCA3EE0002D830 /* GeoJSONFeatureCollectionTests.swift */,
 				F883AEFA21CC92100002D830 /* GeoJSONGeometryTests.swift */,
+				F883AF0421CD172A0002D830 /* GeoJSONStaticFeatureCollectionTests.swift */,
 				F883AEE421CC913D0002D830 /* Info.plist */,
 			);
 			path = GeoJSONCodableTests;
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F883AF0521CD172A0002D830 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */,
 				F883AEFD21CC9F3A0002D830 /* GeoJSONFeatureTests.swift in Sources */,
 				F883AF0121CCAB0E0002D830 /* GeoJSONTests.swift in Sources */,
 				F883AEFF21CCA3EE0002D830 /* GeoJSONFeatureCollectionTests.swift in Sources */,

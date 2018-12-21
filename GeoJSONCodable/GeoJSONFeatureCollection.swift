@@ -14,7 +14,7 @@ struct GeoJSONFeatureCollection: Codable, Equatable {
     let features: [Feature]
 }
 
-struct GeoJSONStaticFeatureCollection<Geometry, Properties>: Codable where Geometry: GeoJSONStaticGeometry, Properties: Codable & Equatable {
+struct GeoJSONStaticFeatureCollection<Geometry, Properties>: Codable where Geometry: GeoJSONStaticGeometry, Properties: Codable {
     typealias Feature = GeoJSONStaticFeature<Geometry, Properties>
 
     let features: [Feature]

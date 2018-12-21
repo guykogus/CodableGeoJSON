@@ -44,8 +44,8 @@ struct GeoJSONFeature: Codable, Equatable {
     let properties: JSONObject?
 }
 
-struct GeoJSONStaticFeature<Geometry, Properties>: Codable, Equatable where Geometry: GeoJSONStaticGeometry, Properties: Codable & Equatable {
+struct GeoJSONStaticFeature<Geometry, Properties>: Codable where Geometry: GeoJSONStaticGeometry, Properties: Codable {
     let id: GeoJSONFeatureIdentifier?
-    let geometry: Geometry
-    let properties: Properties
+    let geometry: Geometry?
+    let properties: Properties?
 }
