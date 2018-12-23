@@ -2,7 +2,7 @@ platform :osx, '10.10'
 use_frameworks!
 
 def shared_pods
-	pod 'SwiftCodableJSON', :path => '/Users/kogus/Developer/iOS Projects/SwiftCodableJSON/SwiftCodableJSON.podspec'
+	pod 'SwiftCodableJSON'
 end
 
 target 'SwiftCodableGeoJSON' do
