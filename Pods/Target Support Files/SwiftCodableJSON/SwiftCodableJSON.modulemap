@@ -1,0 +1,6 @@
+framework module SwiftCodableJSON {
+  umbrella header "SwiftCodableJSON-umbrella.h"
+
+  export *
+  module * { export * }
+}

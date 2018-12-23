@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		315FD5EB5180F8F65DAB8B5C /* Pods_SwiftCodableGeoJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF77ED0B1A21232DC4BDC70D /* Pods_SwiftCodableGeoJSON.framework */; };
+		C6E814D1C7972AF6CAF75A72 /* Pods_SwiftCodableGeoJSONTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452323F0E2AAB5A743D89760 /* Pods_SwiftCodableGeoJSONTests.framework */; };
+		F883AF6821CF2DBB0002D830 /* SwiftCodableGeoJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F883AF5E21CF2DBA0002D830 /* SwiftCodableGeoJSON.framework */; };
+		F883AF6F21CF2DBB0002D830 /* SwiftCodableGeoJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F883AF6121CF2DBA0002D830 /* SwiftCodableGeoJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F883AF7E21CF2E5E0002D830 /* GeoJSONFeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7821CF2E5D0002D830 /* GeoJSONFeatureCollection.swift */; };
+		F883AF7F21CF2E5E0002D830 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7921CF2E5E0002D830 /* GeoJSON.swift */; };
+		F883AF8021CF2E5E0002D830 /* GeoJSONFeatureIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7A21CF2E5E0002D830 /* GeoJSONFeatureIdentifier.swift */; };
+		F883AF8121CF2E5E0002D830 /* GeoJSONFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7B21CF2E5E0002D830 /* GeoJSONFeature.swift */; };
+		F883AF8221CF2E5E0002D830 /* GeoJSONGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7C21CF2E5E0002D830 /* GeoJSONGeometry.swift */; };
+		F883AF8321CF2E5E0002D830 /* GeoJSONPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7D21CF2E5E0002D830 /* GeoJSONPosition.swift */; };
+		F889B10021CF32420075A8D0 /* GeoJSONFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */; };
+		F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */; };
+		F889B10221CF32420075A8D0 /* GeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */; };
+		F889B10321CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */; };
+		F889B10421CF32420075A8D0 /* GeoJSONGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F883AF6921CF2DBB0002D830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F883AF5521CF2DBA0002D830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F883AF5D21CF2DBA0002D830;
+			remoteInfo = SwiftCodableGeoJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		452323F0E2AAB5A743D89760 /* Pods_SwiftCodableGeoJSONTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCodableGeoJSONTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59834E0ED2A55BB5D43A3302 /* Pods-SwiftCodableGeoJSONTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCodableGeoJSONTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCodableGeoJSONTests/Pods-SwiftCodableGeoJSONTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CBCBEE34E6B57109DD3F4C1 /* Pods-SwiftCodableGeoJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCodableGeoJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCodableGeoJSON/Pods-SwiftCodableGeoJSON.debug.xcconfig"; sourceTree = "<group>"; };
+		BF77ED0B1A21232DC4BDC70D /* Pods_SwiftCodableGeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCodableGeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2588ACAB7877813D15172A6 /* Pods-SwiftCodableGeoJSONTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCodableGeoJSONTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCodableGeoJSONTests/Pods-SwiftCodableGeoJSONTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC723BFE39D8BE804170F7C /* Pods-SwiftCodableGeoJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCodableGeoJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCodableGeoJSON/Pods-SwiftCodableGeoJSON.release.xcconfig"; sourceTree = "<group>"; };
+		F883AF5E21CF2DBA0002D830 /* SwiftCodableGeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCodableGeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F883AF6121CF2DBA0002D830 /* SwiftCodableGeoJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCodableGeoJSON.h; sourceTree = "<group>"; };
+		F883AF6221CF2DBA0002D830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F883AF6721CF2DBB0002D830 /* SwiftCodableGeoJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCodableGeoJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F883AF6E21CF2DBB0002D830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F883AF7821CF2E5D0002D830 /* GeoJSONFeatureCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureCollection.swift; sourceTree = "<group>"; };
+		F883AF7921CF2E5E0002D830 /* GeoJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
+		F883AF7A21CF2E5E0002D830 /* GeoJSONFeatureIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureIdentifier.swift; sourceTree = "<group>"; };
+		F883AF7B21CF2E5E0002D830 /* GeoJSONFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeature.swift; sourceTree = "<group>"; };
+		F883AF7C21CF2E5E0002D830 /* GeoJSONGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONGeometry.swift; sourceTree = "<group>"; };
+		F883AF7D21CF2E5E0002D830 /* GeoJSONPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONPosition.swift; sourceTree = "<group>"; };
+		F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureTests.swift; sourceTree = "<group>"; };
+		F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONStaticFeatureCollectionTests.swift; sourceTree = "<group>"; };
+		F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONTests.swift; sourceTree = "<group>"; };
+		F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureCollectionTests.swift; sourceTree = "<group>"; };
+		F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONGeometryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F883AF5B21CF2DBA0002D830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315FD5EB5180F8F65DAB8B5C /* Pods_SwiftCodableGeoJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F883AF6421CF2DBB0002D830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F883AF6821CF2DBB0002D830 /* SwiftCodableGeoJSON.framework in Frameworks */,
+				C6E814D1C7972AF6CAF75A72 /* Pods_SwiftCodableGeoJSONTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		107BC127ABD393CA6576B603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CBCBEE34E6B57109DD3F4C1 /* Pods-SwiftCodableGeoJSON.debug.xcconfig */,
+				CEC723BFE39D8BE804170F7C /* Pods-SwiftCodableGeoJSON.release.xcconfig */,
+				C2588ACAB7877813D15172A6 /* Pods-SwiftCodableGeoJSONTests.debug.xcconfig */,
+				59834E0ED2A55BB5D43A3302 /* Pods-SwiftCodableGeoJSONTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4BBC3657D9CC938B9EBF9C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF77ED0B1A21232DC4BDC70D /* Pods_SwiftCodableGeoJSON.framework */,
+				452323F0E2AAB5A743D89760 /* Pods_SwiftCodableGeoJSONTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F883AF5421CF2DBA0002D830 = {
+			isa = PBXGroup;
+			children = (
+				F883AF6021CF2DBA0002D830 /* SwiftCodableGeoJSON */,
+				F883AF6B21CF2DBB0002D830 /* SwiftCodableGeoJSONTests */,
+				F883AF5F21CF2DBA0002D830 /* Products */,
+				107BC127ABD393CA6576B603 /* Pods */,
+				F4BBC3657D9CC938B9EBF9C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F883AF5F21CF2DBA0002D830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F883AF5E21CF2DBA0002D830 /* SwiftCodableGeoJSON.framework */,
+				F883AF6721CF2DBB0002D830 /* SwiftCodableGeoJSONTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F883AF6021CF2DBA0002D830 /* SwiftCodableGeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F883AF7921CF2E5E0002D830 /* GeoJSON.swift */,
+				F883AF7B21CF2E5E0002D830 /* GeoJSONFeature.swift */,
+				F883AF7821CF2E5D0002D830 /* GeoJSONFeatureCollection.swift */,
+				F883AF7A21CF2E5E0002D830 /* GeoJSONFeatureIdentifier.swift */,
+				F883AF7C21CF2E5E0002D830 /* GeoJSONGeometry.swift */,
+				F883AF7D21CF2E5E0002D830 /* GeoJSONPosition.swift */,
+				F883AF6121CF2DBA0002D830 /* SwiftCodableGeoJSON.h */,
+				F883AF6221CF2DBA0002D830 /* Info.plist */,
+			);
+			path = SwiftCodableGeoJSON;
+			sourceTree = "<group>";
+		};
+		F883AF6B21CF2DBB0002D830 /* SwiftCodableGeoJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */,
+				F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */,
+				F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */,
+				F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */,
+				F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */,
+				F883AF6E21CF2DBB0002D830 /* Info.plist */,
+			);
+			path = SwiftCodableGeoJSONTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F883AF5921CF2DBA0002D830 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F883AF6F21CF2DBB0002D830 /* SwiftCodableGeoJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F883AF5D21CF2DBA0002D830 /* SwiftCodableGeoJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F883AF7221CF2DBB0002D830 /* Build configuration list for PBXNativeTarget "SwiftCodableGeoJSON" */;
+			buildPhases = (
+				E824B69B9F0EB34D47EBF1CE /* [CP] Check Pods Manifest.lock */,
+				F883AF5921CF2DBA0002D830 /* Headers */,
+				F883AF5A21CF2DBA0002D830 /* Sources */,
+				F883AF5B21CF2DBA0002D830 /* Frameworks */,
+				F883AF5C21CF2DBA0002D830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCodableGeoJSON;
+			productName = SwiftCodableGeoJSON;
+			productReference = F883AF5E21CF2DBA0002D830 /* SwiftCodableGeoJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F883AF6621CF2DBB0002D830 /* SwiftCodableGeoJSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F883AF7521CF2DBB0002D830 /* Build configuration list for PBXNativeTarget "SwiftCodableGeoJSONTests" */;
+			buildPhases = (
+				A1029629281D91C056D127E5 /* [CP] Check Pods Manifest.lock */,
+				F883AF6321CF2DBB0002D830 /* Sources */,
+				F883AF6421CF2DBB0002D830 /* Frameworks */,
+				F883AF6521CF2DBB0002D830 /* Resources */,
+				A1516BCB7C35F3D4A9471068 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F883AF6A21CF2DBB0002D830 /* PBXTargetDependency */,
+			);
+			name = SwiftCodableGeoJSONTests;
+			productName = SwiftCodableGeoJSONTests;
+			productReference = F883AF6721CF2DBB0002D830 /* SwiftCodableGeoJSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F883AF5521CF2DBA0002D830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Guy Kogus";
+				TargetAttributes = {
+					F883AF5D21CF2DBA0002D830 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					F883AF6621CF2DBB0002D830 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = F883AF5821CF2DBA0002D830 /* Build configuration list for PBXProject "SwiftCodableGeoJSON" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F883AF5421CF2DBA0002D830;
+			productRefGroup = F883AF5F21CF2DBA0002D830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F883AF5D21CF2DBA0002D830 /* SwiftCodableGeoJSON */,
+				F883AF6621CF2DBB0002D830 /* SwiftCodableGeoJSONTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F883AF5C21CF2DBA0002D830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F883AF6521CF2DBB0002D830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1029629281D91C056D127E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftCodableGeoJSONTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1516BCB7C35F3D4A9471068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCodableGeoJSONTests/Pods-SwiftCodableGeoJSONTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftCodableJSON/SwiftCodableJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCodableJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCodableGeoJSONTests/Pods-SwiftCodableGeoJSONTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E824B69B9F0EB34D47EBF1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftCodableGeoJSON-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F883AF5A21CF2DBA0002D830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F883AF8121CF2E5E0002D830 /* GeoJSONFeature.swift in Sources */,
+				F883AF7E21CF2E5E0002D830 /* GeoJSONFeatureCollection.swift in Sources */,
+				F883AF8221CF2E5E0002D830 /* GeoJSONGeometry.swift in Sources */,
+				F883AF8021CF2E5E0002D830 /* GeoJSONFeatureIdentifier.swift in Sources */,
+				F883AF8321CF2E5E0002D830 /* GeoJSONPosition.swift in Sources */,
+				F883AF7F21CF2E5E0002D830 /* GeoJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F883AF6321CF2DBB0002D830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */,
+				F889B10221CF32420075A8D0 /* GeoJSONTests.swift in Sources */,
+				F889B10321CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift in Sources */,
+				F889B10021CF32420075A8D0 /* GeoJSONFeatureTests.swift in Sources */,
+				F889B10421CF32420075A8D0 /* GeoJSONGeometryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F883AF6A21CF2DBB0002D830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F883AF5D21CF2DBA0002D830 /* SwiftCodableGeoJSON */;
+			targetProxy = F883AF6921CF2DBB0002D830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F883AF7021CF2DBB0002D830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F883AF7121CF2DBB0002D830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F883AF7321CF2DBB0002D830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CBCBEE34E6B57109DD3F4C1 /* Pods-SwiftCodableGeoJSON.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftCodableGeoJSON/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogus.SwiftCodableGeoJSON;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F883AF7421CF2DBB0002D830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC723BFE39D8BE804170F7C /* Pods-SwiftCodableGeoJSON.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftCodableGeoJSON/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogus.SwiftCodableGeoJSON;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		F883AF7621CF2DBB0002D830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2588ACAB7877813D15172A6 /* Pods-SwiftCodableGeoJSONTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P76UMZDLW3;
+				INFOPLIST_FILE = SwiftCodableGeoJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogus.SwiftCodableGeoJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F883AF7721CF2DBB0002D830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59834E0ED2A55BB5D43A3302 /* Pods-SwiftCodableGeoJSONTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P76UMZDLW3;
+				INFOPLIST_FILE = SwiftCodableGeoJSONTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kogus.SwiftCodableGeoJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F883AF5821CF2DBA0002D830 /* Build configuration list for PBXProject "SwiftCodableGeoJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F883AF7021CF2DBB0002D830 /* Debug */,
+				F883AF7121CF2DBB0002D830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F883AF7221CF2DBB0002D830 /* Build configuration list for PBXNativeTarget "SwiftCodableGeoJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F883AF7321CF2DBB0002D830 /* Debug */,
+				F883AF7421CF2DBB0002D830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F883AF7521CF2DBB0002D830 /* Build configuration list for PBXNativeTarget "SwiftCodableGeoJSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F883AF7621CF2DBB0002D830 /* Debug */,
+				F883AF7721CF2DBB0002D830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F883AF5521CF2DBA0002D830 /* Project object */;
+}

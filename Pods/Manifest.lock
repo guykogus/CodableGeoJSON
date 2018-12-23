@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCodableJSON (0.0.1)
+
+DEPENDENCIES:
+  - SwiftCodableJSON (from `/Users/kogus/Developer/iOS Projects/SwiftCodableJSON/SwiftCodableJSON.podspec`)
+
+EXTERNAL SOURCES:
+  SwiftCodableJSON:
+    :path: "/Users/kogus/Developer/iOS Projects/SwiftCodableJSON/SwiftCodableJSON.podspec"
+
+SPEC CHECKSUMS:
+  SwiftCodableJSON: f6ddf0b8d423527f0207f24729175d53118c2daa
+
+PODFILE CHECKSUM: 8021b3c64aa51f1eb35570d3acff9df463d14cae
+
+COCOAPODS: 1.5.3
