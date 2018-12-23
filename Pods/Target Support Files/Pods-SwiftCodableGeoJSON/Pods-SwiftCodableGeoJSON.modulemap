@@ -1,6 +1,0 @@
-framework module Pods_SwiftCodableGeoJSON {
-  umbrella header "Pods-SwiftCodableGeoJSON-umbrella.h"
-
-  export *
-  module * { export * }
-}
