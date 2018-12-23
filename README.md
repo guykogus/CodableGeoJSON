@@ -33,7 +33,7 @@ For example, if you know that you're loading a list of locations inside a "Featu
 }
 ```
 
-You can define the structure using a `struct` and a `typealias`.
+You can define the model using a `struct` and a `typealias`.
 
 ```Swift
 struct LocationProperties: Codable {
@@ -41,7 +41,7 @@ struct LocationProperties: Codable {
     let name: String
 }
 
-typealias LocationFeatureCollection = GeoJSONStaticFeatureCollection<PointGeometry, LocationProperties>
+typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>
 ```
 
 The benefit here is that you can access the specific geometry and all the properties directly, without having to perform any introspection. E.g.
@@ -56,12 +56,12 @@ firstFeature?.properties?.name // "Heathrow Airport"
 
 ### Empty properties
 
-If you don't want or need any of the properties of the feature, you can define an empty `struct` and set it as the `Property` template parameter.
+If you don't want or need any of the properties of the feature, you can define an empty `struct` and set it as the `Properties` template parameter.
 
 ```Swift
 struct EmptyProperties: Codable {}
 
-typealias PointFeature = GeoJSONStaticFeature<PointGeometry, EmptyProperties>
+typealias PointFeature = GeoJSONFeature<PointGeometry, EmptyProperties>
 ```
 
 This will result in the "Feature" objects only containing a point coordinate.
