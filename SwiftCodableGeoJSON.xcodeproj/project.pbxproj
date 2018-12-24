@@ -18,7 +18,7 @@
 		F883AF8221CF2E5E0002D830 /* GeoJSONGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7C21CF2E5E0002D830 /* GeoJSONGeometry.swift */; };
 		F883AF8321CF2E5E0002D830 /* GeoJSONPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883AF7D21CF2E5E0002D830 /* GeoJSONPosition.swift */; };
 		F889B10021CF32420075A8D0 /* GeoJSONFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */; };
-		F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */; };
+		F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureTests.swift */; };
 		F889B10221CF32420075A8D0 /* GeoJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */; };
 		F889B10321CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */; };
 		F889B10421CF32420075A8D0 /* GeoJSONGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */; };
@@ -56,7 +56,7 @@
 		F883AF7C21CF2E5E0002D830 /* GeoJSONGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONGeometry.swift; sourceTree = "<group>"; };
 		F883AF7D21CF2E5E0002D830 /* GeoJSONPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONPosition.swift; sourceTree = "<group>"; };
 		F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureTests.swift; sourceTree = "<group>"; };
-		F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONStaticFeatureCollectionTests.swift; sourceTree = "<group>"; };
+		F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONStaticFeatureTests.swift; sourceTree = "<group>"; };
 		F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONTests.swift; sourceTree = "<group>"; };
 		F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONFeatureCollectionTests.swift; sourceTree = "<group>"; };
 		F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoJSONGeometryTests.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				F889B0FE21CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift */,
 				F889B0FB21CF32420075A8D0 /* GeoJSONFeatureTests.swift */,
 				F889B0FF21CF32420075A8D0 /* GeoJSONGeometryTests.swift */,
-				F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift */,
+				F889B0FC21CF32420075A8D0 /* GeoJSONStaticFeatureTests.swift */,
 				F889B0FD21CF32420075A8D0 /* GeoJSONTests.swift */,
 				F883AF6E21CF2DBB0002D830 /* Info.plist */,
 			);
@@ -349,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureCollectionTests.swift in Sources */,
+				F889B10121CF32420075A8D0 /* GeoJSONStaticFeatureTests.swift in Sources */,
 				F889B10221CF32420075A8D0 /* GeoJSONTests.swift in Sources */,
 				F889B10321CF32420075A8D0 /* GeoJSONFeatureCollectionTests.swift in Sources */,
 				F889B10021CF32420075A8D0 /* GeoJSONFeatureTests.swift in Sources */,
