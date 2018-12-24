@@ -47,11 +47,24 @@ typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, Lo
 The benefit here is that you can access the specific geometry and all the properties directly, without having to perform any introspection. E.g.
 
 ```Swift
-let decoder = JSONDecoder()
-let locationFeatures = try decoder.decode(LocationFeatureCollection.self, from: data)
+let locationFeatures = try JSONDecoder().decode(LocationFeatureCollection.self, from: data)
 let firstFeature = locationFeatures.features.first
 firstFeature?.geometry.longitude // -0.452207
 firstFeature?.properties?.name // "Heathrow Airport"
+```
+
+### Geometry Collection
+
+A geometry collection is, by definition, not statically typed, as it can contain a mixed array of different GeoJSON geometry types. Therefore you will need to check each array by hand. (If somebody has a way of simplifying this, feel free to post a PR 😉)
+
+```Swift
+let geometryColection = try JSONDecoder().decode(GeometryCollection.self, from: data)
+if geometryColection.geometries.count > 0,
+    case GeoJSON.Geometry.point(let pointCoordinates) = geometryColection.geometries[0] {
+    let point = PointGeometry(coordinates: pointCoordinates)
+} else {
+    // Failed to get expected geometry
+}
 ```
 
 ### Empty properties
@@ -64,7 +77,7 @@ struct EmptyProperties: Codable {}
 typealias PointFeature = GeoJSONFeature<PointGeometry, EmptyProperties>
 ```
 
-This will result in the "Feature" objects only containing a point coordinate.
+This will result in the "Feature" objects containing only a point coordinate.
 
 ## Dynamic Models
 
@@ -74,7 +87,7 @@ First, let's assume that you have a GeoJSON data object. The first step is to de
 
 ```Swift
 do {
-    switch try decoder.decode(GeoJSON.self, from: data) {
+    switch try JSONDecoder().decode(GeoJSON.self, from: data) {
     case .feature(let feature, _):
         handleGeometry(feature.geometry)
     case .featureCollection(let featureCollection, _):
