@@ -183,7 +183,7 @@ class GeoJSONTests: XCTestCase {
 
         do {
             guard case GeoJSON.geometry(let geometry, _) = try decoder.decode(GeoJSON.self, from: string.data(using: .utf8)!) else {
-                XCTFail("Failed to get feature")
+                XCTFail("Failed to get geometry")
                 return
             }
 
@@ -225,7 +225,7 @@ class GeoJSONTests: XCTestCase {
 
         do {
             guard case GeoJSON.geometry(let geometry, _) = try decoder.decode(GeoJSON.self, from: string.data(using: .utf8)!) else {
-                XCTFail("Failed to get feature")
+                XCTFail("Failed to get geometries")
                 return
             }
 

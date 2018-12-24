@@ -27,7 +27,7 @@ public enum GeoJSON: Equatable {
         case multiLineString(coordinates: MultiLineStringGeometry.Coordinates)
         case polygon(coordinates: PolygonGeometry.Coordinates)
         case multiPolygon(coordinates: MultiPolygonGeometry.Coordinates)
-        case geometryCollection(geometries: [Geometry])
+        case geometryCollection(geometries: GeometryCollection.Geometries)
     }
 
     case feature(feature: Feature, boundingBox: [Double]?)

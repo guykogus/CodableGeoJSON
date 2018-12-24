@@ -1,14 +1,9 @@
-platform :osx, '10.10'
+platform :osx, '10.9'
 use_frameworks!
 
-def shared_pods
-	pod 'SwiftCodableJSON'
-end
-
 target 'SwiftCodableGeoJSON' do
-    shared_pods
-end
+	pod 'SwiftCodableJSON'
 
-target 'SwiftCodableGeoJSONTests' do
-    shared_pods
+	target 'SwiftCodableGeoJSONTests' do
+	end
 end

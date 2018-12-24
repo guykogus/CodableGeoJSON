@@ -8,38 +8,51 @@
 
 import Foundation
 
-public typealias LinearRing = [GeoJSONPosition]
-
-public protocol GeoJSONGeometry: Codable, Equatable {
-    associatedtype Coordinates: Codable
-
-    var coordinates: Coordinates { get }
-}
+public protocol GeoJSONGeometry: Codable, Equatable {}
 
 public struct PointGeometry: GeoJSONGeometry {
-    public let coordinates: GeoJSONPosition
+    public typealias Coordinates = GeoJSONPosition
+
+    public let coordinates: Coordinates
 }
 
 public struct MultiPointGeometry: GeoJSONGeometry {
-    public let coordinates: [PointGeometry.Coordinates]
+    public typealias Coordinates = [PointGeometry.Coordinates]
+
+    public let coordinates: Coordinates
 }
 
 public struct LineStringGeometry: GeoJSONGeometry {
-    public let coordinates: [GeoJSONPosition]
+    public typealias Coordinates = [GeoJSONPosition]
+
+    public let coordinates: Coordinates
 }
 
 public struct MultiLineStringGeometry: GeoJSONGeometry {
-    public let coordinates: [LineStringGeometry.Coordinates]
+    public typealias Coordinates = [LineStringGeometry.Coordinates]
+
+    public let coordinates: Coordinates
 }
 
 public struct PolygonGeometry: GeoJSONGeometry {
-    public let coordinates: [LinearRing]
+    public typealias LinearRing = [GeoJSONPosition]
+    public typealias Coordinates = [LinearRing]
 
-    public var exteriorRing: LinearRing? {
+    public let coordinates: Coordinates
+
+    public var exteriorRing: Coordinates.Element? {
         return coordinates.first
     }
 }
 
 public struct MultiPolygonGeometry: GeoJSONGeometry {
-    public let coordinates: [PolygonGeometry.Coordinates]
+    public typealias Coordinates = [PolygonGeometry.Coordinates]
+
+    public let coordinates: Coordinates
+}
+
+public struct GeometryCollection: GeoJSONGeometry {
+    public typealias Geometries = [GeoJSON.Geometry]
+
+    public let geometries: Geometries
 }

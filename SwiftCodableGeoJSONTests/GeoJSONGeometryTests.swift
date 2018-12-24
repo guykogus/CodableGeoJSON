@@ -23,8 +23,13 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let coordinates = GeoJSONPosition(longitude: 100, latitude: -100)
+
         XCTAssertEqual(geometry(from: pointString),
-                       GeoJSON.Geometry.point(coordinates: GeoJSONPosition(longitude: 100, latitude: -100)))
+                       GeoJSON.Geometry.point(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: pointString),
+                       PointGeometry(coordinates: coordinates))
     }
 
     func testMultiPoint() {
@@ -44,11 +49,16 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let coordinates = [
+            GeoJSONPosition(longitude: 100, latitude: -100),
+            GeoJSONPosition(longitude: 101, latitude: -101)
+        ]
+
         XCTAssertEqual(geometry(from: multiPointString),
-                       GeoJSON.Geometry.multiPoint(coordinates: [
-                        GeoJSONPosition(longitude: 100, latitude: -100),
-                        GeoJSONPosition(longitude: 101, latitude: -101)
-                        ]))
+                       GeoJSON.Geometry.multiPoint(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: multiPointString),
+                       MultiPointGeometry(coordinates: coordinates))
     }
 
     func testLineString() {
@@ -68,11 +78,16 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let coordinates = [
+            GeoJSONPosition(longitude: 100, latitude: -100),
+            GeoJSONPosition(longitude: 101, latitude: -101)
+        ]
+
         XCTAssertEqual(geometry(from: lineStringString),
-                       GeoJSON.Geometry.lineString(coordinates: [
-                        GeoJSONPosition(longitude: 100, latitude: -100),
-                        GeoJSONPosition(longitude: 101, latitude: -101)
-                        ]))
+                       GeoJSON.Geometry.lineString(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: lineStringString),
+                       LineStringGeometry(coordinates: coordinates))
     }
 
     func testMultiLineString() {
@@ -104,17 +119,22 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let coordinates = [
+            [
+                GeoJSONPosition(longitude: 100, latitude: -100),
+                GeoJSONPosition(longitude: 101, latitude: -101)
+            ],
+            [
+                GeoJSONPosition(longitude: 102, latitude: -102),
+                GeoJSONPosition(longitude: 103, latitude: -103)
+            ]
+        ]
+
         XCTAssertEqual(geometry(from: multiLineStringString),
-                       GeoJSON.Geometry.multiLineString(coordinates: [
-                        [
-                            GeoJSONPosition(longitude: 100, latitude: -100),
-                            GeoJSONPosition(longitude: 101, latitude: -101)
-                        ],
-                        [
-                            GeoJSONPosition(longitude: 102, latitude: -102),
-                            GeoJSONPosition(longitude: 103, latitude: -103)
-                        ]
-                        ]))
+                       GeoJSON.Geometry.multiLineString(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: multiLineStringString),
+                       MultiLineStringGeometry(coordinates: coordinates))
     }
 
     func testPolygon() {
@@ -170,23 +190,28 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let coordinates = [
+            [
+                GeoJSONPosition(longitude: 100, latitude: -100),
+                GeoJSONPosition(longitude: 101, latitude: -100),
+                GeoJSONPosition(longitude: 101, latitude: -101),
+                GeoJSONPosition(longitude: 100, latitude: -101),
+                GeoJSONPosition(longitude: 100, latitude: -100)
+            ],
+            [
+                GeoJSONPosition(longitude: 100.8, latitude: -100.2),
+                GeoJSONPosition(longitude: 100.8, latitude: -100.8),
+                GeoJSONPosition(longitude: 100.2, latitude: -100.8),
+                GeoJSONPosition(longitude: 100.2, latitude: -100.2),
+                GeoJSONPosition(longitude: 100.8, latitude: -100.2)
+            ]
+        ]
+
         XCTAssertEqual(geometry(from: polygonString),
-                       GeoJSON.Geometry.polygon(coordinates: [
-                        [
-                            GeoJSONPosition(longitude: 100, latitude: -100),
-                            GeoJSONPosition(longitude: 101, latitude: -100),
-                            GeoJSONPosition(longitude: 101, latitude: -101),
-                            GeoJSONPosition(longitude: 100, latitude: -101),
-                            GeoJSONPosition(longitude: 100, latitude: -100)
-                        ],
-                        [
-                            GeoJSONPosition(longitude: 100.8, latitude: -100.2),
-                            GeoJSONPosition(longitude: 100.8, latitude: -100.8),
-                            GeoJSONPosition(longitude: 100.2, latitude: -100.8),
-                            GeoJSONPosition(longitude: 100.2, latitude: -100.2),
-                            GeoJSONPosition(longitude: 100.8, latitude: -100.2)
-                        ]
-                        ]))
+                       GeoJSON.Geometry.polygon(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: polygonString),
+                       PolygonGeometry(coordinates: coordinates))
     }
 
     func testMultiPolygon() {
@@ -268,35 +293,40 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
-        XCTAssertEqual(geometry(from: multiPolygonString),
-                       GeoJSON.Geometry.multiPolygon(coordinates: [
-                        [
-                            [
-                                GeoJSONPosition(longitude: 102, latitude: -102),
-                                GeoJSONPosition(longitude: 103, latitude: -102),
-                                GeoJSONPosition(longitude: 103, latitude: -103),
-                                GeoJSONPosition(longitude: 102, latitude: -103),
-                                GeoJSONPosition(longitude: 102, latitude: -102)
-                            ]
-                        ],
-                        [
+        let coordinates = [
+            [
+                [
+                    GeoJSONPosition(longitude: 102, latitude: -102),
+                    GeoJSONPosition(longitude: 103, latitude: -102),
+                    GeoJSONPosition(longitude: 103, latitude: -103),
+                    GeoJSONPosition(longitude: 102, latitude: -103),
+                    GeoJSONPosition(longitude: 102, latitude: -102)
+                ]
+            ],
+            [
 
-                            [
-                                GeoJSONPosition(longitude: 100, latitude: -100),
-                                GeoJSONPosition(longitude: 101, latitude: -100),
-                                GeoJSONPosition(longitude: 101, latitude: -101),
-                                GeoJSONPosition(longitude: 100, latitude: -101),
-                                GeoJSONPosition(longitude: 100, latitude: -100)
-                            ],
-                            [
-                                GeoJSONPosition(longitude: 100.2, latitude: -100.2),
-                                GeoJSONPosition(longitude: 100.2, latitude: -100.8),
-                                GeoJSONPosition(longitude: 100.8, latitude: -100.8),
-                                GeoJSONPosition(longitude: 100.8, latitude: -100.2),
-                                GeoJSONPosition(longitude: 100.2, latitude: -100.2)
-                            ]
-                        ]
-                        ]))
+                [
+                    GeoJSONPosition(longitude: 100, latitude: -100),
+                    GeoJSONPosition(longitude: 101, latitude: -100),
+                    GeoJSONPosition(longitude: 101, latitude: -101),
+                    GeoJSONPosition(longitude: 100, latitude: -101),
+                    GeoJSONPosition(longitude: 100, latitude: -100)
+                ],
+                [
+                    GeoJSONPosition(longitude: 100.2, latitude: -100.2),
+                    GeoJSONPosition(longitude: 100.2, latitude: -100.8),
+                    GeoJSONPosition(longitude: 100.8, latitude: -100.8),
+                    GeoJSONPosition(longitude: 100.8, latitude: -100.2),
+                    GeoJSONPosition(longitude: 100.2, latitude: -100.2)
+                ]
+            ]
+        ]
+
+        XCTAssertEqual(geometry(from: multiPolygonString),
+                       GeoJSON.Geometry.multiPolygon(coordinates: coordinates))
+
+        XCTAssertEqual(geometry(from: multiPolygonString),
+                       MultiPolygonGeometry(coordinates: coordinates))
     }
 
     func testGeometryCollection() {
@@ -328,21 +358,26 @@ class GeoJSONGeometryTests: XCTestCase {
 }
 """
 
+        let geometries = [
+            GeoJSON.Geometry.point(coordinates: GeoJSONPosition(longitude: 100, latitude: -100)),
+            GeoJSON.Geometry.lineString(coordinates: [
+                GeoJSONPosition(longitude: 101, latitude: -101),
+                GeoJSONPosition(longitude: 102, latitude: -102)
+                ])
+        ]
+
         XCTAssertEqual(geometry(from: geometryCollectionString),
-                       GeoJSON.Geometry.geometryCollection(geometries: [
-                        GeoJSON.Geometry.point(coordinates: GeoJSONPosition(longitude: 100, latitude: -100)),
-                        GeoJSON.Geometry.lineString(coordinates: [
-                            GeoJSONPosition(longitude: 101, latitude: -101),
-                            GeoJSONPosition(longitude: 102, latitude: -102)
-                            ])
-                        ]))
+                       GeoJSON.Geometry.geometryCollection(geometries: geometries))
+
+        XCTAssertEqual(geometry(from: geometryCollectionString),
+                       GeometryCollection(geometries: geometries))
     }
 
     // MARK: - Private functions
 
-    private func geometry(from string: String) -> GeoJSON.Geometry? {
+    private func geometry<T>(from string: String) -> T? where T: Codable {
         do {
-            return try decoder.decode(GeoJSON.Geometry.self, from: string.data(using: .utf8)!)
+            return try decoder.decode(T.self, from: string.data(using: .utf8)!)
         } catch {
             XCTFail("Failed to decode geometry: \(string)\n\(error)")
             return nil
