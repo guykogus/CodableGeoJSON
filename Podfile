@@ -1,9 +1,9 @@
 platform :osx, '10.9'
 use_frameworks!
 
-target 'SwiftCodableGeoJSON' do
-	pod 'SwiftCodableJSON'
+target 'CodableGeoJSON' do
+	pod 'CodableJSON'
 
-	target 'SwiftCodableGeoJSONTests' do
+	target 'CodableGeoJSONTests' do
 	end
 end

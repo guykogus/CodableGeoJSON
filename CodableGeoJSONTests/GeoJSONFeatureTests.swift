@@ -1,13 +1,13 @@
 //
 //  GeoJSONFeatureTests.swift
-//  SwiftCodableGeoJSONTests
+//  CodableGeoJSONTests
 //
 //  Created by Guy Kogus on 21/12/2018.
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftCodableGeoJSON
+@testable import CodableGeoJSON
 
 class GeoJSONFeatureTests: XCTestCase {
     func testFeature() {

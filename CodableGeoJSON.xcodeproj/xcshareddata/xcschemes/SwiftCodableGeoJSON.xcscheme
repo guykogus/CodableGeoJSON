@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F883AF5D21CF2DBA0002D830"
-               BuildableName = "SwiftCodableGeoJSON.framework"
-               BlueprintName = "SwiftCodableGeoJSON"
-               ReferencedContainer = "container:SwiftCodableGeoJSON.xcodeproj">
+               BuildableName = "CodableGeoJSON.framework"
+               BlueprintName = "CodableGeoJSON"
+               ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F883AF6621CF2DBB0002D830"
-               BuildableName = "SwiftCodableGeoJSONTests.xctest"
-               BlueprintName = "SwiftCodableGeoJSONTests"
-               ReferencedContainer = "container:SwiftCodableGeoJSON.xcodeproj">
+               BuildableName = "CodableGeoJSONTests.xctest"
+               BlueprintName = "CodableGeoJSONTests"
+               ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F883AF5D21CF2DBA0002D830"
-            BuildableName = "SwiftCodableGeoJSON.framework"
-            BlueprintName = "SwiftCodableGeoJSON"
-            ReferencedContainer = "container:SwiftCodableGeoJSON.xcodeproj">
+            BuildableName = "CodableGeoJSON.framework"
+            BlueprintName = "CodableGeoJSON"
+            ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F883AF5D21CF2DBA0002D830"
-            BuildableName = "SwiftCodableGeoJSON.framework"
-            BlueprintName = "SwiftCodableGeoJSON"
-            ReferencedContainer = "container:SwiftCodableGeoJSON.xcodeproj">
+            BuildableName = "CodableGeoJSON.framework"
+            BlueprintName = "CodableGeoJSON"
+            ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F883AF5D21CF2DBA0002D830"
-            BuildableName = "SwiftCodableGeoJSON.framework"
-            BlueprintName = "SwiftCodableGeoJSON"
-            ReferencedContainer = "container:SwiftCodableGeoJSON.xcodeproj">
+            BuildableName = "CodableGeoJSON.framework"
+            BlueprintName = "CodableGeoJSON"
+            ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,16 +1,16 @@
 PODS:
-  - SwiftCodableJSON (0.0.1)
+  - CodableJSON (1.0.0)
 
 DEPENDENCIES:
-  - SwiftCodableJSON
+  - CodableJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SwiftCodableJSON
+    - CodableJSON
 
 SPEC CHECKSUMS:
-  SwiftCodableJSON: 05a908de281a9ed2924bf43bfccdbdfc85fc406d
+  CodableJSON: c4fcf96fb82c8faf9263ac4f9f595c17d2171ff1
 
-PODFILE CHECKSUM: 18bcf605d4d4b3f0d0e61e0ef07a255da5349953
+PODFILE CHECKSUM: 40ea2c6f8b18963709e626fbb0ee49ee8d645b95
 
 COCOAPODS: 1.6.0.beta.2

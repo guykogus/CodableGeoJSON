@@ -1,4 +1,4 @@
-# SwiftCodableGeoJSON
+# CodableGeoJSON
 This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
 
 This library includes both a dynamic and static variant of the GeoJSON models. The static variant is useful when handling pre-defined GeoJSON responses.
@@ -141,10 +141,12 @@ func handleGeometry(_ geometry: GeoJSONGeometry?) {
 
 # Installation
 
-SwiftCodableGeoJSON is available through Cocoapods. To install, add to your Podfile:
+CodableGeoJSON is available through [Cocoapods](https://cocoapods.org). To install, add to your Podfile:
 
-> pod 'SwiftCodableGeoJSON'
+```
+pod 'CodableGeoJSON'
+```
 
 # License
 
-SwiftCodableGeoJSON is available under the MIT license. See the LICENSE file for more info.
+CodableGeoJSON is available under the MIT license. See the LICENSE file for more info.

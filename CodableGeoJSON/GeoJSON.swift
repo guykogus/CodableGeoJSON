@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftCodableJSON
+import CodableJSON
 
 public enum GeoJSON: Equatable {
     public struct Feature: Codable, Equatable {
