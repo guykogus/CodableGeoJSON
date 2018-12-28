@@ -8,8 +8,10 @@
 
 import Foundation
 
+/// A list of `GeoJSONFeature` objects.
 public struct GeoJSONFeatureCollection<Geometry, Properties>: Codable where Geometry: GeoJSONGeometry, Properties: Codable {
     public typealias Feature = GeoJSONFeature<Geometry, Properties>
 
+    /// The features of the collection.
     public let features: [Feature]
 }

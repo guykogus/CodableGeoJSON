@@ -8,8 +8,12 @@
 
 import Foundation
 
+/// A spatially bounded entity.
 public struct GeoJSONFeature<Geometry, Properties>: Codable where Geometry: GeoJSONGeometry, Properties: Codable {
+    /// The identifier of the feature. May be either a string or integer.
     public let id: GeoJSONFeatureIdentifier?
+    /// The geometry of the feature.
     public let geometry: Geometry?
+    /// Additional properties of the feature.
     public let properties: Properties?
 }

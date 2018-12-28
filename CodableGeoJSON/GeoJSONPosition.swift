@@ -8,17 +8,29 @@
 
 import Foundation
 
+/// The fundamental geometry construct.
 public struct GeoJSONPosition: Equatable {
+    /// The longitudinal coordinate.
     public let longitude: Double
+    /// The latitudinal coordinate.
     public let latitude: Double
+    /// The elevation at the coordinates.
     public let elevation: Double?
 
+    /// Create a new `GeoJSONPosition`
+    ///
+    /// - Parameters:
+    ///   - longitude: The longitudinal coordinate.
+    ///   - latitude: The latitudinal coordinate.
+    ///   - elevation: The elevation at the coordinates.
     init(longitude: Double, latitude: Double, elevation: Double? = nil) {
         self.longitude = longitude
         self.latitude = latitude
         self.elevation = elevation
     }
 }
+
+// MARK: - Codable
 
 extension GeoJSONPosition: Codable {
     public init(from decoder: Decoder) throws {

@@ -8,10 +8,15 @@
 
 import Foundation
 
-public enum GeoJSONFeatureIdentifier: Equatable {
+/// The identifier value of a feature
+public enum GeoJSONFeatureIdentifier: Equatable, Hashable {
+    /// The identifier as a string value.
     case string(value: String)
+    /// The identifier as an integer value.
     case int(value: Int)
 }
+
+// MARK: - Codable
 
 extension GeoJSONFeatureIdentifier: Codable {
     private enum Errors: Error {

@@ -9,29 +9,47 @@
 import Foundation
 import CodableJSON
 
+/// A GeoJSON type.
 public enum GeoJSON: Equatable {
+    /// A spatially bounded entity.
     public struct Feature: Codable, Equatable {
+        /// The identifier of the feature. May be either a string or integer.
         public let id: GeoJSONFeatureIdentifier?
+        /// The geometry of the feature.
         public let geometry: Geometry?
+        /// Additional properties of the feature.
         public let properties: JSON?
     }
 
+    /// A list of `Feature` objects.
     public struct FeatureCollection: Codable, Equatable {
+        /// The features of the collection.
         public let features: [Feature]
     }
 
+    /// A region of space.
     public enum Geometry: Equatable {
+        /// A single position.
         case point(coordinates: PointGeometry.Coordinates)
+        /// An array of positions.
         case multiPoint(coordinates: MultiPointGeometry.Coordinates)
+        /// An array of 2 or more positions.
         case lineString(coordinates: LineStringGeometry.Coordinates)
+        /// An array of `lineString` coordinate arrays.
         case multiLineString(coordinates: MultiLineStringGeometry.Coordinates)
+        /// An array of linear rings.
         case polygon(coordinates: PolygonGeometry.Coordinates)
+        /// An array of `polygon` coordinate arrays.
         case multiPolygon(coordinates: MultiPolygonGeometry.Coordinates)
+        /// An array of geometries.
         case geometryCollection(geometries: GeometryCollection.Geometries)
     }
 
+    /// A spatially bounded entity.
     case feature(feature: Feature, boundingBox: [Double]?)
+    /// A list of `feature`s.
     case featureCollection(featureCollection: FeatureCollection, boundingBox: [Double]?)
+    /// A region of space.
     case geometry(geometry: Geometry, boundingBox: [Double]?)
 }
 
