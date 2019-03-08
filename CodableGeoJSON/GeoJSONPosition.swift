@@ -23,7 +23,7 @@ public struct GeoJSONPosition: Equatable {
     ///   - longitude: The longitudinal coordinate.
     ///   - latitude: The latitudinal coordinate.
     ///   - elevation: The elevation at the coordinates.
-    init(longitude: Double, latitude: Double, elevation: Double? = nil) {
+    public init(longitude: Double, latitude: Double, elevation: Double? = nil) {
         self.longitude = longitude
         self.latitude = latitude
         self.elevation = elevation
