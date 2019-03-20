@@ -1,4 +1,8 @@
 # CodableGeoJSON
+
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CodableGeoJSON.svg)](https://cocoapods.org)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
 
 This library includes both a dynamic and static variant of the GeoJSON models. The static variant is useful when handling pre-defined GeoJSON responses.
