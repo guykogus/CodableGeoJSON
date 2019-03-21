@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests : NSObject
+@end
+@implementation PodsDummy_Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests
+@end

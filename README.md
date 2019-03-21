@@ -7,6 +7,12 @@ This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https
 
 This library includes both a dynamic and static variant of the GeoJSON models. The static variant is useful when handling pre-defined GeoJSON responses.
 
+# Requirements
+
+- iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- Xcode 10.1+
+- Swift 4.2+
+
 # Usage
 
 ## Static Models

@@ -1,0 +1,6 @@
+framework module CodableJSON {
+  umbrella header "CodableJSON-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

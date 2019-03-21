@@ -1,0 +1,2073 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		168328A17B83D966CEEB89A7C56F61A7 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B9198E69ECFB24876AF499378706ECE /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199B11341A0772642204CA89EF89C7BF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */; };
+		232F4A8ED3FD4CBA0FB70EBDAC4A2395 /* CodableJSON-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A537678990D9C779522C7D4265CEF729 /* CodableJSON-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF668E19499EB2A87D14BE3A9A90D00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EC9B344BB330C9BC2FB8F7EC39997E /* Foundation.framework */; };
+		30DB97F53341A2B7D30278D04089B007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EC9B344BB330C9BC2FB8F7EC39997E /* Foundation.framework */; };
+		329CEFB27B5896022753D981F70BCEE6 /* CodableJSON-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CE1E59EEA5FC8E1F14FC39328D3E56 /* CodableJSON-macOS-dummy.m */; };
+		384C19BE5E91BE75FA9781DC9580D874 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5219AEE11F0998E0ADD75AA73A7A7DC /* Cocoa.framework */; };
+		46A65270B9E31C36369E92FD1D435043 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB3CC32956EF956F859253B48927FA3 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C1B54336884A05AAEA9DD6117887C4B /* CodableJSON-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC383E6C8133DF94CCD6FEC89C6138B /* CodableJSON-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5014BE62987F3B9501D5E7EEF929E053 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF83BE1E97A55908B52CB32B7B526D0B /* Foundation.framework */; };
+		51A2EF671750F2413B2FC77C9A5F1329 /* Pods-CodableGeoJSON-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3213D5DF47360F59022E18805D52ACF /* Pods-CodableGeoJSON-iOS-dummy.m */; };
+		570237A637A3F05F8A1989512530FBA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE82FAD66B3AE8940E580B74A55104C3 /* Foundation.framework */; };
+		58186E04843F87E549A61B4C642FEA0A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */; };
+		65885775F8ADCE8172A55C749D3B5334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE82FAD66B3AE8940E580B74A55104C3 /* Foundation.framework */; };
+		74F538419295CF6313C649C1694D63CF /* Pods-CodableGeoJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1F4E2001C07DDFC8AC3AAA8E34C045 /* Pods-CodableGeoJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		752847872D256634A7128A26193DC21A /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D977D0AD917E0C3C2890CFD465DE3AB8 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m */; };
+		7A3416254725C16D4146D09D60A1CCEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF83BE1E97A55908B52CB32B7B526D0B /* Foundation.framework */; };
+		7FECA0A662B6D356682EF5AE8DE62D12 /* Pods-CodableGeoJSON-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF72F8FE64F9636BC99965435CE32A68 /* Pods-CodableGeoJSON-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85805B7E7A7EBA943C0B01BDBE93DF46 /* CodableJSON-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9564FD01E5317DB4EAB4CE21D389C1A /* CodableJSON-iOS-dummy.m */; };
+		867937033431853845751DE7206E63CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5219AEE11F0998E0ADD75AA73A7A7DC /* Cocoa.framework */; };
+		8DC2935EAA4D21021FABC2A78907DFE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5219AEE11F0998E0ADD75AA73A7A7DC /* Cocoa.framework */; };
+		921186833CA0341C0633B16125C09445 /* Pods-CodableGeoJSON-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 300DB8DB89885B82073D42651A05019F /* Pods-CodableGeoJSON-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BCF3A6E0115F0DBAEBF9393F3A93E39 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */; };
+		A79E0E2413E996C2D3CA0D47DDA5C7D9 /* Pods-CodableGeoJSON-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7847D63AA992ADB45E961EF96B47417 /* Pods-CodableGeoJSON-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB45BFA32F38BEAAD9D9E7C6C24280D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE82FAD66B3AE8940E580B74A55104C3 /* Foundation.framework */; };
+		B338987B826F10FE6332F9D1A35C968E /* Pods-CodableGeoJSON-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C331326233FCFFB52E30D55A7ECB865 /* Pods-CodableGeoJSON-watchOS-dummy.m */; };
+		B8548D89ABF1577A5DD9CD1C2EE297D5 /* Pods-CodableGeoJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 690556690EEB7174D16384794807915A /* Pods-CodableGeoJSON-dummy.m */; };
+		BFD141463F2B49E1BD8A55961A7DB3BA /* Pods-CodableGeoJSON-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1861733B9EAC047FEB34AE8ABE0D21 /* Pods-CodableGeoJSON-tvOS-dummy.m */; };
+		C14D748929483CA0CDCFACA5156167AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF83BE1E97A55908B52CB32B7B526D0B /* Foundation.framework */; };
+		C7DD0936FA9F84EA4CFA28409F934B3C /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB055993BEE4520CDD63963AB24CF30 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m */; };
+		C8F66004298A478A90AC81A0F3102FD2 /* CodableJSON-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 730F11A712C11E9E422E4783539D5CB9 /* CodableJSON-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C98074586BBFED08B6730A73D70C3283 /* CodableJSON-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64A1627AEC653864FD8BACBEDA3E9FE /* CodableJSON-watchOS-dummy.m */; };
+		E844DD9BBF10EF2CEB0A7DA1D82C2902 /* Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D50095F2EEA5425DE45EFE9B8B4E5F /* Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m */; };
+		E8F28380D1A7AF3D180E6741CA46CF2C /* CodableJSON-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC5D763172F1156393E68529CC5FD2 /* CodableJSON-tvOS-dummy.m */; };
+		F0AC96927852F4EC919FC31E51B70A05 /* CodableJSON-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9124A9682B012B61A7016CA5156A54A7 /* CodableJSON-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84990D81821A9D42AFAB50F86A97726 /* Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C955DACF710D564108CFBDE370528D0D /* Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB21CE762F08506B9754413DBE18BC9A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C2E2B124547B4F88BC9B6C4FD199B1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A5056AEB861FF53B2F8A623366968EF;
+			remoteInfo = "CodableJSON-tvOS";
+		};
+		30FEFDCED180883EB1745D4574810696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E9BB0D0899E75CBEB1CE98940D89199;
+			remoteInfo = "CodableJSON-watchOS";
+		};
+		60597857E92D870077094A0688E9DF02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353EFECD2ACC37951F025F21FD805009;
+			remoteInfo = "CodableJSON-macOS";
+		};
+		9C63853A5082BE3C4BC8694F4E1AE166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A5056AEB861FF53B2F8A623366968EF;
+			remoteInfo = "CodableJSON-tvOS";
+		};
+		AA27C2299E0D0CD176CBEFD2ED978B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 353EFECD2ACC37951F025F21FD805009;
+			remoteInfo = "CodableJSON-macOS";
+		};
+		D8A16DE37EC36862ED74EBCF3E92F3A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB9E062EF7F6F94C5D2795655EA824D3;
+			remoteInfo = "CodableJSON-iOS";
+		};
+		EC3FF5652BBB49327DF0FD924CDDD6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB9E062EF7F6F94C5D2795655EA824D3;
+			remoteInfo = "CodableJSON-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CE58D002206A64BC36A3624FEFF7FD /* Pods-CodableGeoJSON-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		04D8F89CAB635E34A756BE3492ACBEDD /* Pods-CodableGeoJSON-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0999833510F8DC6E4B80A3E33ED83376 /* Pods-CodableGeoJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON.release.xcconfig"; sourceTree = "<group>"; };
+		13DC8CCC3156344C09C8590EC9E14925 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.modulemap"; sourceTree = "<group>"; };
+		14C59B0AF14DC7937A10E47376361A46 /* Pods-CodableGeoJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON.modulemap"; sourceTree = "<group>"; };
+		1628820AC397EC0BA833A09A0DD97465 /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B58742EE0C8B2B4D6EAA8A05C60369 /* CodableJSON-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-macOS-prefix.pch"; path = "../CodableJSON-macOS/CodableJSON-macOS-prefix.pch"; sourceTree = "<group>"; };
+		1837674341E1B63F60AED4D43644A0B0 /* Pods-CodableGeoJSON-CodableGeoJSONTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-CodableGeoJSONTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EB11C89931D8C1973165C7B2CA77D3B /* CodableJSON-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-tvOS-prefix.pch"; path = "../CodableJSON-tvOS/CodableJSON-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		201E9A7CF8F403D657CDD1C2B17CADBF /* Pods_CodableGeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224C1833DE498A931CDC15425965AE4D /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		241DFD4FABC818E3E5D6D1E74A1D3E87 /* Pods_CodableGeoJSON_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B54F7908411543D18CD5E33CF41FBA /* Pods_CodableGeoJSON_iOS_CodableGeoJSON_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_iOS_CodableGeoJSON_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A364ED508921738375C5F906ACD8B3D /* CodableJSON-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "CodableJSON-watchOS-Info.plist"; path = "../CodableJSON-watchOS/CodableJSON-watchOS-Info.plist"; sourceTree = "<group>"; };
+		2F1861733B9EAC047FEB34AE8ABE0D21 /* Pods-CodableGeoJSON-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-tvOS-dummy.m"; sourceTree = "<group>"; };
+		300DB8DB89885B82073D42651A05019F /* Pods-CodableGeoJSON-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		31EE27D8CAC40C1431284DE6B53F6DF2 /* Pods-CodableGeoJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON.debug.xcconfig"; sourceTree = "<group>"; };
+		388F7E314220E11765286AE6B67CEE70 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3998D5568416DED42EC9A4FF5643364C /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-Info.plist"; sourceTree = "<group>"; };
+		3B9198E69ECFB24876AF499378706ECE /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		3C3C9C22C8D55D49344BED72715307CE /* Pods-CodableGeoJSON-CodableGeoJSONTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-frameworks.sh"; sourceTree = "<group>"; };
+		3C7421E8ABDE5089DC365191557C4E38 /* Pods_CodableGeoJSON_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D7C474927D763AF702E7867DBB36896 /* Pods-CodableGeoJSON-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E8DBA97EAEC62DFFF6A9F6F99CA7935 /* Pods-CodableGeoJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-Info.plist"; sourceTree = "<group>"; };
+		46214A8DE83F22AE53F87979BFA8F710 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		49BC5D763172F1156393E68529CC5FD2 /* CodableJSON-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CodableJSON-tvOS-dummy.m"; path = "../CodableJSON-tvOS/CodableJSON-tvOS-dummy.m"; sourceTree = "<group>"; };
+		4A7B77F9486F3DDEB3A60F3B1764CE4E /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AC895C1C1CEDDD2A54242AAFE66D0FF /* CodableJSON-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CodableJSON-iOS.xcconfig"; sourceTree = "<group>"; };
+		4BF1E1B8CF67AAD81122E435A0422FB0 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DFB39A84CEF1B3CABE9300AD943CF3E /* Pods-CodableGeoJSON-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-iOS.modulemap"; sourceTree = "<group>"; };
+		5277A2E1249B81D0E70F532979231F15 /* Pods-CodableGeoJSON-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-tvOS.modulemap"; sourceTree = "<group>"; };
+		52B557B8E6859491D78DD2EB1C082C9E /* CodableJSON-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CodableJSON-iOS-Info.plist"; sourceTree = "<group>"; };
+		5494A5A1AD8E1A786B31204E9DC1A032 /* CodableJSON-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "CodableJSON-macOS-Info.plist"; path = "../CodableJSON-macOS/CodableJSON-macOS-Info.plist"; sourceTree = "<group>"; };
+		568B81F96B007DF7BDBC5FF3343A6CF1 /* Pods-CodableGeoJSON-CodableGeoJSONTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-Info.plist"; sourceTree = "<group>"; };
+		57B5D1CAFF08C6B1976DC070B1156432 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		593189F1B9BA570EE9298949F9E19634 /* CodableJSON-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CodableJSON-watchOS.xcconfig"; path = "../CodableJSON-watchOS/CodableJSON-watchOS.xcconfig"; sourceTree = "<group>"; };
+		59BDE782C7B27341C374A77533FDBA1D /* CodableJSON-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "CodableJSON-watchOS.modulemap"; path = "../CodableJSON-watchOS/CodableJSON-watchOS.modulemap"; sourceTree = "<group>"; };
+		5CC383E6C8133DF94CCD6FEC89C6138B /* CodableJSON-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-macOS-umbrella.h"; path = "../CodableJSON-macOS/CodableJSON-macOS-umbrella.h"; sourceTree = "<group>"; };
+		5E1BC3E68599693766E29291AE6BCFC5 /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		611C6C894874C7F22815D3EED370100D /* Pods-CodableGeoJSON-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-acknowledgements.plist"; sourceTree = "<group>"; };
+		6486A31AAC4C47BBE1E49262C7C8606F /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		690556690EEB7174D16384794807915A /* Pods-CodableGeoJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-dummy.m"; sourceTree = "<group>"; };
+		6A1F4E2001C07DDFC8AC3AAA8E34C045 /* Pods-CodableGeoJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-umbrella.h"; sourceTree = "<group>"; };
+		6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = CodableJSON/JSON.swift; sourceTree = "<group>"; };
+		6BAF0F0624C8D673D730658938200928 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F3FC3B86603897134A7FFC2488BC559 /* Pods-CodableGeoJSON-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		730F11A712C11E9E422E4783539D5CB9 /* CodableJSON-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-watchOS-umbrella.h"; path = "../CodableJSON-watchOS/CodableJSON-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		75C14CC5CF3F211FE6420F9288804251 /* Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79276BD9351B7201846C05FDA12E2360 /* CodableJSON-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "CodableJSON-tvOS-Info.plist"; path = "../CodableJSON-tvOS/CodableJSON-tvOS-Info.plist"; sourceTree = "<group>"; };
+		7F4E4185A400CC9F804C76E9DD7D4B9F /* Pods-CodableGeoJSON-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		825EB9EA6007E3C9B02B6EC4643FEEBC /* Pods-CodableGeoJSON-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-tvOS-Info.plist"; sourceTree = "<group>"; };
+		85978868EF86CAC8A6D0FB948DB05D3D /* Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C6E3D05E39F6130D241995AC2F5ACCE /* Pods-CodableGeoJSON-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9124A9682B012B61A7016CA5156A54A7 /* CodableJSON-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-iOS-umbrella.h"; sourceTree = "<group>"; };
+		933CA7FD1901DC418392DA915F5BAE9F /* CodableJSON-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CodableJSON-macOS.xcconfig"; path = "../CodableJSON-macOS/CodableJSON-macOS.xcconfig"; sourceTree = "<group>"; };
+		94E0B5C55F50745C2C47A513BAB1DD3D /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95CD27A8A0C5BAB7A0DB5A6BB1FDF3D2 /* Pods-CodableGeoJSON-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C331326233FCFFB52E30D55A7ECB865 /* Pods-CodableGeoJSON-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-watchOS-dummy.m"; sourceTree = "<group>"; };
+		9C7F0DE942D4C29E485839A4C7C27252 /* CodableJSON-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "CodableJSON-macOS.modulemap"; path = "../CodableJSON-macOS/CodableJSON-macOS.modulemap"; sourceTree = "<group>"; };
+		9CDBA7C18CB5082FEEDE2FD21D3D6581 /* CodableJSON-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "CodableJSON-tvOS.modulemap"; path = "../CodableJSON-tvOS/CodableJSON-tvOS.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A12E2EE121F095552350DD8F14CF2E18 /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A537678990D9C779522C7D4265CEF729 /* CodableJSON-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-tvOS-umbrella.h"; path = "../CodableJSON-tvOS/CodableJSON-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		A58D807A41DBB6B2893B4B4AE11EDD53 /* Pods-CodableGeoJSON-CodableGeoJSONTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-CodableGeoJSONTests.modulemap"; sourceTree = "<group>"; };
+		A64A1627AEC653864FD8BACBEDA3E9FE /* CodableJSON-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CodableJSON-watchOS-dummy.m"; path = "../CodableJSON-watchOS/CodableJSON-watchOS-dummy.m"; sourceTree = "<group>"; };
+		A6FEB272A962C5FD61F64D528E14D282 /* Pods_CodableGeoJSON_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A636010943A0D5D3FA7C19CA8EB123 /* Pods-CodableGeoJSON-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-iOS-Info.plist"; sourceTree = "<group>"; };
+		AB0815E351BA3DA0B932EA25DC2702EC /* CodableJSON-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-iOS-prefix.pch"; sourceTree = "<group>"; };
+		AF72F8FE64F9636BC99965435CE32A68 /* Pods-CodableGeoJSON-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-iOS-umbrella.h"; sourceTree = "<group>"; };
+		AFA10C4A0B96F3DBE188A29E5BB92113 /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFB110C1E1424A15121D0FBB5A69E5B /* Pods-CodableGeoJSON-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-watchOS.modulemap"; sourceTree = "<group>"; };
+		B0C280CDEC70D905E396B9C9CDE4A40A /* Pods_CodableGeoJSON_CodableGeoJSONTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodableGeoJSON_CodableGeoJSONTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B336E584780D7545DC71F1BF0A75C31B /* Pods-CodableGeoJSON-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		B5219AEE11F0998E0ADD75AA73A7A7DC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B99433D8FA6EDE2F72927E00F508F03F /* Pods-CodableGeoJSON-watchOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodableGeoJSON-watchOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD94E694052273B54A87C11266FEA379 /* Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF31044B55990E62D330E12A21CBA6FD /* CodableJSON-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "CodableJSON-iOS.modulemap"; sourceTree = "<group>"; };
+		C955DACF710D564108CFBDE370528D0D /* Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h"; sourceTree = "<group>"; };
+		CF0B8E2762BB7F8111B5EDDB40A1DC99 /* Pods-CodableGeoJSON-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CF83BE1E97A55908B52CB32B7B526D0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1A8974AC63511EB56246BFF5761AC15 /* Pods-CodableGeoJSON-watchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-watchOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3213D5DF47360F59022E18805D52ACF /* Pods-CodableGeoJSON-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-iOS-dummy.m"; sourceTree = "<group>"; };
+		D9564FD01E5317DB4EAB4CE21D389C1A /* CodableJSON-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableJSON-iOS-dummy.m"; sourceTree = "<group>"; };
+		D977D0AD917E0C3C2890CFD465DE3AB8 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m"; sourceTree = "<group>"; };
+		DC3DFD275CEA2B4E00CB2E0EB036EF43 /* CodableJSON-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CodableJSON-tvOS.xcconfig"; path = "../CodableJSON-tvOS/CodableJSON-tvOS.xcconfig"; sourceTree = "<group>"; };
+		DDB055993BEE4520CDD63963AB24CF30 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m"; sourceTree = "<group>"; };
+		E2992628F32B58B97EF3D0194615A84F /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E57BB1316E6DE3493268D96D7376471D /* Pods-CodableGeoJSON-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E8769DB6ACB5715E073DDD2371D31D84 /* Pods-CodableGeoJSON-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EAB3CC32956EF956F859253B48927FA3 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h"; sourceTree = "<group>"; };
+		EE82FAD66B3AE8940E580B74A55104C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EFE34AC29697888809C13DD2873DE859 /* CodableJSON-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CodableJSON-watchOS-prefix.pch"; path = "../CodableJSON-watchOS/CodableJSON-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		F0D50095F2EEA5425DE45EFE9B8B4E5F /* Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m"; sourceTree = "<group>"; };
+		F5823B454049FAC591EF90E5379DDD1C /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.modulemap"; sourceTree = "<group>"; };
+		F5CE1E59EEA5FC8E1F14FC39328D3E56 /* CodableJSON-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CodableJSON-macOS-dummy.m"; path = "../CodableJSON-macOS/CodableJSON-macOS-dummy.m"; sourceTree = "<group>"; };
+		F5EC9B344BB330C9BC2FB8F7EC39997E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F7847D63AA992ADB45E961EF96B47417 /* Pods-CodableGeoJSON-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodableGeoJSON-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		F9F359D41DBB2C22510C8CEF23179273 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		FBFECDF59B51D8C6B0917529FAEB3D7A /* Pods-CodableGeoJSON-CodableGeoJSONTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodableGeoJSON-CodableGeoJSONTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF2327330399856ADCC0F58BFCB1BC2 /* Pods-CodableGeoJSON-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodableGeoJSON-watchOS-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03952AAAA4ECD3CC952CA27FA3A4D2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DB97F53341A2B7D30278D04089B007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		142DCB10F3C6FED92C2CD810916B6264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2935EAA4D21021FABC2A78907DFE4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337D09E69D2BD4575EE45D12C1FE0B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3416254725C16D4146D09D60A1CCEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B89727F7E9B8C9E015C28A9AFB00605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570237A637A3F05F8A1989512530FBA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC1B648F72135D9AB940E014919FB59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14D748929483CA0CDCFACA5156167AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68979735C8F95A5A7DABCA2E4A093EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384C19BE5E91BE75FA9781DC9580D874 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D9288CD691A18053F328E87E21014A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB45BFA32F38BEAAD9D9E7C6C24280D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77C8FB9D9227BDAA1E66D424970F0857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014BE62987F3B9501D5E7EEF929E053 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E66BE6157A6C3318E3AF0D45EAB5FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF668E19499EB2A87D14BE3A9A90D00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACAE2E238B63C033054E33BD9D192C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65885775F8ADCE8172A55C749D3B5334 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3887E2D1791F2E31717F94483722CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867937033431853845751DE7206E63CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0360B3EAABBAACB3E5CEF71F42EE3815 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76A406C5BEEF3DED2D705ACBDE5245F7 /* Pods-CodableGeoJSON */,
+				8DB051DD6541AB291E94CFCA0224CD01 /* Pods-CodableGeoJSON-CodableGeoJSONTests */,
+				7593F9B6B9B8783331FC096E313634B4 /* Pods-CodableGeoJSON-iOS */,
+				90A7F837FC38C8E54CFA34B83D964068 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests */,
+				38835931F13B4ACDB7690217F60CA6B7 /* Pods-CodableGeoJSON-tvOS */,
+				AC36AEA428AE0EB54B037045F25AB2BD /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests */,
+				1872AAE5F9A609EC8951F42260432A55 /* Pods-CodableGeoJSON-watchOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1872AAE5F9A609EC8951F42260432A55 /* Pods-CodableGeoJSON-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				AFFB110C1E1424A15121D0FBB5A69E5B /* Pods-CodableGeoJSON-watchOS.modulemap */,
+				B99433D8FA6EDE2F72927E00F508F03F /* Pods-CodableGeoJSON-watchOS-acknowledgements.markdown */,
+				D1A8974AC63511EB56246BFF5761AC15 /* Pods-CodableGeoJSON-watchOS-acknowledgements.plist */,
+				9C331326233FCFFB52E30D55A7ECB865 /* Pods-CodableGeoJSON-watchOS-dummy.m */,
+				FCF2327330399856ADCC0F58BFCB1BC2 /* Pods-CodableGeoJSON-watchOS-Info.plist */,
+				300DB8DB89885B82073D42651A05019F /* Pods-CodableGeoJSON-watchOS-umbrella.h */,
+				6F3FC3B86603897134A7FFC2488BC559 /* Pods-CodableGeoJSON-watchOS.debug.xcconfig */,
+				B336E584780D7545DC71F1BF0A75C31B /* Pods-CodableGeoJSON-watchOS.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-watchOS";
+			path = "Target Support Files/Pods-CodableGeoJSON-watchOS";
+			sourceTree = "<group>";
+		};
+		265B50C7ABA3802FEE1C7E130D3609FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5513909A4C0BC668A4DD4BF07DD8B /* CodableJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38835931F13B4ACDB7690217F60CA6B7 /* Pods-CodableGeoJSON-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				5277A2E1249B81D0E70F532979231F15 /* Pods-CodableGeoJSON-tvOS.modulemap */,
+				95CD27A8A0C5BAB7A0DB5A6BB1FDF3D2 /* Pods-CodableGeoJSON-tvOS-acknowledgements.markdown */,
+				3D7C474927D763AF702E7867DBB36896 /* Pods-CodableGeoJSON-tvOS-acknowledgements.plist */,
+				2F1861733B9EAC047FEB34AE8ABE0D21 /* Pods-CodableGeoJSON-tvOS-dummy.m */,
+				825EB9EA6007E3C9B02B6EC4643FEEBC /* Pods-CodableGeoJSON-tvOS-Info.plist */,
+				F7847D63AA992ADB45E961EF96B47417 /* Pods-CodableGeoJSON-tvOS-umbrella.h */,
+				E57BB1316E6DE3493268D96D7376471D /* Pods-CodableGeoJSON-tvOS.debug.xcconfig */,
+				02CE58D002206A64BC36A3624FEFF7FD /* Pods-CodableGeoJSON-tvOS.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-tvOS";
+			path = "Target Support Files/Pods-CodableGeoJSON-tvOS";
+			sourceTree = "<group>";
+		};
+		4EB5513909A4C0BC668A4DD4BF07DD8B /* CodableJSON */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8FCA00A3D27C9342C769E80C36FBC /* JSON.swift */,
+				E05992469498C357E4471824639E4AEE /* Support Files */,
+			);
+			path = CodableJSON;
+			sourceTree = "<group>";
+		};
+		5A4D21523E5EB6778702CACF7C410915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86163F234675C9B862D8F16F4BF989B8 /* iOS */,
+				5E7D4DF524A03505331CD3A7FFD320C0 /* OS X */,
+				B4532F4133248EC2661BA577741F1CA9 /* tvOS */,
+				77C5000785B4328E3949CEBF2835B233 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E7D4DF524A03505331CD3A7FFD320C0 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				B5219AEE11F0998E0ADD75AA73A7A7DC /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		7593F9B6B9B8783331FC096E313634B4 /* Pods-CodableGeoJSON-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4DFB39A84CEF1B3CABE9300AD943CF3E /* Pods-CodableGeoJSON-iOS.modulemap */,
+				04D8F89CAB635E34A756BE3492ACBEDD /* Pods-CodableGeoJSON-iOS-acknowledgements.markdown */,
+				7F4E4185A400CC9F804C76E9DD7D4B9F /* Pods-CodableGeoJSON-iOS-acknowledgements.plist */,
+				D3213D5DF47360F59022E18805D52ACF /* Pods-CodableGeoJSON-iOS-dummy.m */,
+				A9A636010943A0D5D3FA7C19CA8EB123 /* Pods-CodableGeoJSON-iOS-Info.plist */,
+				AF72F8FE64F9636BC99965435CE32A68 /* Pods-CodableGeoJSON-iOS-umbrella.h */,
+				CF0B8E2762BB7F8111B5EDDB40A1DC99 /* Pods-CodableGeoJSON-iOS.debug.xcconfig */,
+				E8769DB6ACB5715E073DDD2371D31D84 /* Pods-CodableGeoJSON-iOS.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-iOS";
+			path = "Target Support Files/Pods-CodableGeoJSON-iOS";
+			sourceTree = "<group>";
+		};
+		76A406C5BEEF3DED2D705ACBDE5245F7 /* Pods-CodableGeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				14C59B0AF14DC7937A10E47376361A46 /* Pods-CodableGeoJSON.modulemap */,
+				8C6E3D05E39F6130D241995AC2F5ACCE /* Pods-CodableGeoJSON-acknowledgements.markdown */,
+				611C6C894874C7F22815D3EED370100D /* Pods-CodableGeoJSON-acknowledgements.plist */,
+				690556690EEB7174D16384794807915A /* Pods-CodableGeoJSON-dummy.m */,
+				3E8DBA97EAEC62DFFF6A9F6F99CA7935 /* Pods-CodableGeoJSON-Info.plist */,
+				6A1F4E2001C07DDFC8AC3AAA8E34C045 /* Pods-CodableGeoJSON-umbrella.h */,
+				31EE27D8CAC40C1431284DE6B53F6DF2 /* Pods-CodableGeoJSON.debug.xcconfig */,
+				0999833510F8DC6E4B80A3E33ED83376 /* Pods-CodableGeoJSON.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON";
+			path = "Target Support Files/Pods-CodableGeoJSON";
+			sourceTree = "<group>";
+		};
+		77C5000785B4328E3949CEBF2835B233 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				F5EC9B344BB330C9BC2FB8F7EC39997E /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		86163F234675C9B862D8F16F4BF989B8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EE82FAD66B3AE8940E580B74A55104C3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8DB051DD6541AB291E94CFCA0224CD01 /* Pods-CodableGeoJSON-CodableGeoJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				A58D807A41DBB6B2893B4B4AE11EDD53 /* Pods-CodableGeoJSON-CodableGeoJSONTests.modulemap */,
+				85978868EF86CAC8A6D0FB948DB05D3D /* Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.markdown */,
+				BD94E694052273B54A87C11266FEA379 /* Pods-CodableGeoJSON-CodableGeoJSONTests-acknowledgements.plist */,
+				F0D50095F2EEA5425DE45EFE9B8B4E5F /* Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m */,
+				3C3C9C22C8D55D49344BED72715307CE /* Pods-CodableGeoJSON-CodableGeoJSONTests-frameworks.sh */,
+				568B81F96B007DF7BDBC5FF3343A6CF1 /* Pods-CodableGeoJSON-CodableGeoJSONTests-Info.plist */,
+				C955DACF710D564108CFBDE370528D0D /* Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h */,
+				FBFECDF59B51D8C6B0917529FAEB3D7A /* Pods-CodableGeoJSON-CodableGeoJSONTests.debug.xcconfig */,
+				1837674341E1B63F60AED4D43644A0B0 /* Pods-CodableGeoJSON-CodableGeoJSONTests.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-CodableGeoJSONTests";
+			path = "Target Support Files/Pods-CodableGeoJSON-CodableGeoJSONTests";
+			sourceTree = "<group>";
+		};
+		90A7F837FC38C8E54CFA34B83D964068 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5823B454049FAC591EF90E5379DDD1C /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.modulemap */,
+				4BF1E1B8CF67AAD81122E435A0422FB0 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.markdown */,
+				57B5D1CAFF08C6B1976DC070B1156432 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-acknowledgements.plist */,
+				DDB055993BEE4520CDD63963AB24CF30 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m */,
+				F9F359D41DBB2C22510C8CEF23179273 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-frameworks.sh */,
+				224C1833DE498A931CDC15425965AE4D /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-Info.plist */,
+				3B9198E69ECFB24876AF499378706ECE /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h */,
+				E2992628F32B58B97EF3D0194615A84F /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.debug.xcconfig */,
+				388F7E314220E11765286AE6B67CEE70 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests";
+			path = "Target Support Files/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests";
+			sourceTree = "<group>";
+		};
+		A8464ED41106A3B18326AC9D4B518AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFA10C4A0B96F3DBE188A29E5BB92113 /* CodableJSON.framework */,
+				A12E2EE121F095552350DD8F14CF2E18 /* CodableJSON.framework */,
+				1628820AC397EC0BA833A09A0DD97465 /* CodableJSON.framework */,
+				5E1BC3E68599693766E29291AE6BCFC5 /* CodableJSON.framework */,
+				201E9A7CF8F403D657CDD1C2B17CADBF /* Pods_CodableGeoJSON.framework */,
+				B0C280CDEC70D905E396B9C9CDE4A40A /* Pods_CodableGeoJSON_CodableGeoJSONTests.framework */,
+				3C7421E8ABDE5089DC365191557C4E38 /* Pods_CodableGeoJSON_iOS.framework */,
+				26B54F7908411543D18CD5E33CF41FBA /* Pods_CodableGeoJSON_iOS_CodableGeoJSON_iOSTests.framework */,
+				A6FEB272A962C5FD61F64D528E14D282 /* Pods_CodableGeoJSON_tvOS.framework */,
+				75C14CC5CF3F211FE6420F9288804251 /* Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests.framework */,
+				241DFD4FABC818E3E5D6D1E74A1D3E87 /* Pods_CodableGeoJSON_watchOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC36AEA428AE0EB54B037045F25AB2BD /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				13DC8CCC3156344C09C8590EC9E14925 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.modulemap */,
+				6BAF0F0624C8D673D730658938200928 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.markdown */,
+				4A7B77F9486F3DDEB3A60F3B1764CE4E /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-acknowledgements.plist */,
+				D977D0AD917E0C3C2890CFD465DE3AB8 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m */,
+				46214A8DE83F22AE53F87979BFA8F710 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-frameworks.sh */,
+				3998D5568416DED42EC9A4FF5643364C /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-Info.plist */,
+				EAB3CC32956EF956F859253B48927FA3 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h */,
+				94E0B5C55F50745C2C47A513BAB1DD3D /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.debug.xcconfig */,
+				6486A31AAC4C47BBE1E49262C7C8606F /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests";
+			path = "Target Support Files/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests";
+			sourceTree = "<group>";
+		};
+		B4532F4133248EC2661BA577741F1CA9 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF83BE1E97A55908B52CB32B7B526D0B /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5A4D21523E5EB6778702CACF7C410915 /* Frameworks */,
+				265B50C7ABA3802FEE1C7E130D3609FE /* Pods */,
+				A8464ED41106A3B18326AC9D4B518AF2 /* Products */,
+				0360B3EAABBAACB3E5CEF71F42EE3815 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E05992469498C357E4471824639E4AEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF31044B55990E62D330E12A21CBA6FD /* CodableJSON-iOS.modulemap */,
+				4AC895C1C1CEDDD2A54242AAFE66D0FF /* CodableJSON-iOS.xcconfig */,
+				D9564FD01E5317DB4EAB4CE21D389C1A /* CodableJSON-iOS-dummy.m */,
+				52B557B8E6859491D78DD2EB1C082C9E /* CodableJSON-iOS-Info.plist */,
+				AB0815E351BA3DA0B932EA25DC2702EC /* CodableJSON-iOS-prefix.pch */,
+				9124A9682B012B61A7016CA5156A54A7 /* CodableJSON-iOS-umbrella.h */,
+				9C7F0DE942D4C29E485839A4C7C27252 /* CodableJSON-macOS.modulemap */,
+				933CA7FD1901DC418392DA915F5BAE9F /* CodableJSON-macOS.xcconfig */,
+				F5CE1E59EEA5FC8E1F14FC39328D3E56 /* CodableJSON-macOS-dummy.m */,
+				5494A5A1AD8E1A786B31204E9DC1A032 /* CodableJSON-macOS-Info.plist */,
+				16B58742EE0C8B2B4D6EAA8A05C60369 /* CodableJSON-macOS-prefix.pch */,
+				5CC383E6C8133DF94CCD6FEC89C6138B /* CodableJSON-macOS-umbrella.h */,
+				9CDBA7C18CB5082FEEDE2FD21D3D6581 /* CodableJSON-tvOS.modulemap */,
+				DC3DFD275CEA2B4E00CB2E0EB036EF43 /* CodableJSON-tvOS.xcconfig */,
+				49BC5D763172F1156393E68529CC5FD2 /* CodableJSON-tvOS-dummy.m */,
+				79276BD9351B7201846C05FDA12E2360 /* CodableJSON-tvOS-Info.plist */,
+				1EB11C89931D8C1973165C7B2CA77D3B /* CodableJSON-tvOS-prefix.pch */,
+				A537678990D9C779522C7D4265CEF729 /* CodableJSON-tvOS-umbrella.h */,
+				59BDE782C7B27341C374A77533FDBA1D /* CodableJSON-watchOS.modulemap */,
+				593189F1B9BA570EE9298949F9E19634 /* CodableJSON-watchOS.xcconfig */,
+				A64A1627AEC653864FD8BACBEDA3E9FE /* CodableJSON-watchOS-dummy.m */,
+				2A364ED508921738375C5F906ACD8B3D /* CodableJSON-watchOS-Info.plist */,
+				EFE34AC29697888809C13DD2873DE859 /* CodableJSON-watchOS-prefix.pch */,
+				730F11A712C11E9E422E4783539D5CB9 /* CodableJSON-watchOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CodableJSON-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		079310E369EF43EC798C69E2D3227B21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921186833CA0341C0633B16125C09445 /* Pods-CodableGeoJSON-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1957062397568D970C06D759DE6051C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84990D81821A9D42AFAB50F86A97726 /* Pods-CodableGeoJSON-CodableGeoJSONTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290AE2AC5215DD4D49D1E09F1703325F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168328A17B83D966CEEB89A7C56F61A7 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EE9852C20BA556BD11A0129C7FE038D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FECA0A662B6D356682EF5AE8DE62D12 /* Pods-CodableGeoJSON-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67613EBE9F4CC166B7F4624DDC2ABBE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				232F4A8ED3FD4CBA0FB70EBDAC4A2395 /* CodableJSON-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A6CDAA799FC349E92BD3FF36520DF26 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79E0E2413E996C2D3CA0D47DDA5C7D9 /* Pods-CodableGeoJSON-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EB0576EDB6C77344DCB444466C3E697 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F66004298A478A90AC81A0F3102FD2 /* CodableJSON-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0C7A70FDC9C3984286C796B8329134 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1B54336884A05AAEA9DD6117887C4B /* CodableJSON-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1E3F44EFF5DE51139C9CA433197977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0AC96927852F4EC919FC31E51B70A05 /* CodableJSON-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66F4CA105F28009B1573BF03D8C4BCC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A65270B9E31C36369E92FD1D435043 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDF6838C9F90366A6E76D01EB15F587 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F538419295CF6313C649C1694D63CF /* Pods-CodableGeoJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		353EFECD2ACC37951F025F21FD805009 /* CodableJSON-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73EF101BDBF67A5981F06B674BEFF1D /* Build configuration list for PBXNativeTarget "CodableJSON-macOS" */;
+			buildPhases = (
+				8E0C7A70FDC9C3984286C796B8329134 /* Headers */,
+				D581887F9BBC95BCCC9FC8F4F6B6C4B6 /* Sources */,
+				142DCB10F3C6FED92C2CD810916B6264 /* Frameworks */,
+				3619698805D24E6A282C5BA16BF77EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodableJSON-macOS";
+			productName = "CodableJSON-macOS";
+			productReference = A12E2EE121F095552350DD8F14CF2E18 /* CodableJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65538B625F2A107056D91A8CF32B237E /* Pods-CodableGeoJSON-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30649B1D56EF61738A70E3975805107C /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-tvOS" */;
+			buildPhases = (
+				7A6CDAA799FC349E92BD3FF36520DF26 /* Headers */,
+				A6CE54A238E623C8E68B515DE0FAF818 /* Sources */,
+				337D09E69D2BD4575EE45D12C1FE0B8D /* Frameworks */,
+				2119C4950938B1710C8E9684DA9D33E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0297F0DC32661006662BCF1D2E50F70A /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-tvOS";
+			productName = "Pods-CodableGeoJSON-tvOS";
+			productReference = A6FEB272A962C5FD61F64D528E14D282 /* Pods_CodableGeoJSON_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EB49E80A58135BAFBAFD34838A409CE /* Pods-CodableGeoJSON-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D4E98D644C72A022C023A345F0CE32 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-watchOS" */;
+			buildPhases = (
+				079310E369EF43EC798C69E2D3227B21 /* Headers */,
+				AE534389182B2FB701CB44A5E8D1D935 /* Sources */,
+				03952AAAA4ECD3CC952CA27FA3A4D2CD /* Frameworks */,
+				F1C5A9FA6C0BA5516DD1F1324D61AC9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26F46D961C656E8B0145772E88F6270 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-watchOS";
+			productName = "Pods-CodableGeoJSON-watchOS";
+			productReference = 241DFD4FABC818E3E5D6D1E74A1D3E87 /* Pods_CodableGeoJSON_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7306BFEB298CFE295F9F7D5AE6F61582 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59F59B0DE010DB06A57FF4FB9B50F81 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests" */;
+			buildPhases = (
+				B66F4CA105F28009B1573BF03D8C4BCC /* Headers */,
+				C2241B7C7B1C8FFCDFA728369EAB3547 /* Sources */,
+				77C8FB9D9227BDAA1E66D424970F0857 /* Frameworks */,
+				A75545F2E5A210FC02854559596BC735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3568FBFD9DADBD548D7F1C4E8DB4C9A /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests";
+			productName = "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests";
+			productReference = 75C14CC5CF3F211FE6420F9288804251 /* Pods_CodableGeoJSON_tvOS_CodableGeoJSON_tvOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A5056AEB861FF53B2F8A623366968EF /* CodableJSON-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85DCCCB7ED5E2D89AC50C57D48B6D6CA /* Build configuration list for PBXNativeTarget "CodableJSON-tvOS" */;
+			buildPhases = (
+				67613EBE9F4CC166B7F4624DDC2ABBE6 /* Headers */,
+				2498DDCE2AE60CAAEBEC564907878B50 /* Sources */,
+				5FC1B648F72135D9AB940E014919FB59 /* Frameworks */,
+				056E91A66A5F74211A3661EC955AC507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodableJSON-tvOS";
+			productName = "CodableJSON-tvOS";
+			productReference = 1628820AC397EC0BA833A09A0DD97465 /* CodableJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E9BB0D0899E75CBEB1CE98940D89199 /* CodableJSON-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 146B134171381B20C9B927722AE4CC96 /* Build configuration list for PBXNativeTarget "CodableJSON-watchOS" */;
+			buildPhases = (
+				7EB0576EDB6C77344DCB444466C3E697 /* Headers */,
+				03792CD4AD7729B828EB160062AFDFBA /* Sources */,
+				9E66BE6157A6C3318E3AF0D45EAB5FDB /* Frameworks */,
+				D057FF81DE7827E8403FF7260F39FBC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodableJSON-watchOS";
+			productName = "CodableJSON-watchOS";
+			productReference = 5E1BC3E68599693766E29291AE6BCFC5 /* CodableJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3941BB81AB24E2309DABAE1733192C0 /* Pods-CodableGeoJSON-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C33D2C6109CCFC75E89AF5EA1D472002 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-iOS" */;
+			buildPhases = (
+				4EE9852C20BA556BD11A0129C7FE038D /* Headers */,
+				1384E62D5D0E727A7963B642AD9179F9 /* Sources */,
+				ACAE2E238B63C033054E33BD9D192C07 /* Frameworks */,
+				7AFC70BF11C7155D5E7D82F3A8DD8A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A0CEAE83B960CBADDCAA89C0CDF92B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-iOS";
+			productName = "Pods-CodableGeoJSON-iOS";
+			productReference = 3C7421E8ABDE5089DC365191557C4E38 /* Pods_CodableGeoJSON_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB9E062EF7F6F94C5D2795655EA824D3 /* CodableJSON-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A918A786F9ADD603EE3E8EBFAC8F3189 /* Build configuration list for PBXNativeTarget "CodableJSON-iOS" */;
+			buildPhases = (
+				9A1E3F44EFF5DE51139C9CA433197977 /* Headers */,
+				5DF03F6614C5EE98DC251504A676D277 /* Sources */,
+				5B89727F7E9B8C9E015C28A9AFB00605 /* Frameworks */,
+				A1B2E0038E82ADD3E9E14A86852B23D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodableJSON-iOS";
+			productName = "CodableJSON-iOS";
+			productReference = AFA10C4A0B96F3DBE188A29E5BB92113 /* CodableJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0A2460C84341BCFC347A2D8890C1CE7 /* Pods-CodableGeoJSON-CodableGeoJSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946DC52BA766020AB3E038E09616DA57 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-CodableGeoJSONTests" */;
+			buildPhases = (
+				1957062397568D970C06D759DE6051C7 /* Headers */,
+				13AA815FA53E456C67A827FB39CC4D80 /* Sources */,
+				B3887E2D1791F2E31717F94483722CC2 /* Frameworks */,
+				BFB507E9DED4ADBB3C5D6068FDC20B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE8782B9F5CE7454CE7EE84829E2A56 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-CodableGeoJSONTests";
+			productName = "Pods-CodableGeoJSON-CodableGeoJSONTests";
+			productReference = B0C280CDEC70D905E396B9C9CDE4A40A /* Pods_CodableGeoJSON_CodableGeoJSONTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5AD022D41D2F56066DA369A977135D0 /* Pods-CodableGeoJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81910A070CE5B8371AF560CB6A9CF7E /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON" */;
+			buildPhases = (
+				CDDF6838C9F90366A6E76D01EB15F587 /* Headers */,
+				051473B31F5FB7B228912AD3B50EEF20 /* Sources */,
+				68979735C8F95A5A7DABCA2E4A093EF3 /* Frameworks */,
+				D966C3B3B44043C5EB55D7A3FDA7A96A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DF0BD9AB89DF81DDB5AACA1F601CBA /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON";
+			productName = "Pods-CodableGeoJSON";
+			productReference = 201E9A7CF8F403D657CDD1C2B17CADBF /* Pods_CodableGeoJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFDF1A6E768C76DB97BB21A88DFDFA7A /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74FEBBABAC72F7A71D964CB1B956354 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests" */;
+			buildPhases = (
+				290AE2AC5215DD4D49D1E09F1703325F /* Headers */,
+				0D4AB71FFA7834CB132E2E4D20C1E8D7 /* Sources */,
+				68D9288CD691A18053F328E87E21014A /* Frameworks */,
+				6348C89146A5CD22C3E7658D4441F6F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A051672C8F95100B9CE721E578C0B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests";
+			productName = "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests";
+			productReference = 26B54F7908411543D18CD5E33CF41FBA /* Pods_CodableGeoJSON_iOS_CodableGeoJSON_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A8464ED41106A3B18326AC9D4B518AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB9E062EF7F6F94C5D2795655EA824D3 /* CodableJSON-iOS */,
+				353EFECD2ACC37951F025F21FD805009 /* CodableJSON-macOS */,
+				9A5056AEB861FF53B2F8A623366968EF /* CodableJSON-tvOS */,
+				9E9BB0D0899E75CBEB1CE98940D89199 /* CodableJSON-watchOS */,
+				E5AD022D41D2F56066DA369A977135D0 /* Pods-CodableGeoJSON */,
+				E0A2460C84341BCFC347A2D8890C1CE7 /* Pods-CodableGeoJSON-CodableGeoJSONTests */,
+				A3941BB81AB24E2309DABAE1733192C0 /* Pods-CodableGeoJSON-iOS */,
+				EFDF1A6E768C76DB97BB21A88DFDFA7A /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests */,
+				65538B625F2A107056D91A8CF32B237E /* Pods-CodableGeoJSON-tvOS */,
+				7306BFEB298CFE295F9F7D5AE6F61582 /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests */,
+				6EB49E80A58135BAFBAFD34838A409CE /* Pods-CodableGeoJSON-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		056E91A66A5F74211A3661EC955AC507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2119C4950938B1710C8E9684DA9D33E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3619698805D24E6A282C5BA16BF77EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6348C89146A5CD22C3E7658D4441F6F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AFC70BF11C7155D5E7D82F3A8DD8A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2E0038E82ADD3E9E14A86852B23D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75545F2E5A210FC02854559596BC735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB507E9DED4ADBB3C5D6068FDC20B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D057FF81DE7827E8403FF7260F39FBC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D966C3B3B44043C5EB55D7A3FDA7A96A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C5A9FA6C0BA5516DD1F1324D61AC9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03792CD4AD7729B828EB160062AFDFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98074586BBFED08B6730A73D70C3283 /* CodableJSON-watchOS-dummy.m in Sources */,
+				9BCF3A6E0115F0DBAEBF9393F3A93E39 /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		051473B31F5FB7B228912AD3B50EEF20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8548D89ABF1577A5DD9CD1C2EE297D5 /* Pods-CodableGeoJSON-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4AB71FFA7834CB132E2E4D20C1E8D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DD0936FA9F84EA4CFA28409F934B3C /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384E62D5D0E727A7963B642AD9179F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51A2EF671750F2413B2FC77C9A5F1329 /* Pods-CodableGeoJSON-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13AA815FA53E456C67A827FB39CC4D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E844DD9BBF10EF2CEB0A7DA1D82C2902 /* Pods-CodableGeoJSON-CodableGeoJSONTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2498DDCE2AE60CAAEBEC564907878B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F28380D1A7AF3D180E6741CA46CF2C /* CodableJSON-tvOS-dummy.m in Sources */,
+				58186E04843F87E549A61B4C642FEA0A /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF03F6614C5EE98DC251504A676D277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85805B7E7A7EBA943C0B01BDBE93DF46 /* CodableJSON-iOS-dummy.m in Sources */,
+				FB21CE762F08506B9754413DBE18BC9A /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6CE54A238E623C8E68B515DE0FAF818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD141463F2B49E1BD8A55961A7DB3BA /* Pods-CodableGeoJSON-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE534389182B2FB701CB44A5E8D1D935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B338987B826F10FE6332F9D1A35C968E /* Pods-CodableGeoJSON-watchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2241B7C7B1C8FFCDFA728369EAB3547 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752847872D256634A7128A26193DC21A /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D581887F9BBC95BCCC9FC8F4F6B6C4B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329CEFB27B5896022753D981F70BCEE6 /* CodableJSON-macOS-dummy.m in Sources */,
+				199B11341A0772642204CA89EF89C7BF /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0297F0DC32661006662BCF1D2E50F70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-tvOS";
+			target = 9A5056AEB861FF53B2F8A623366968EF /* CodableJSON-tvOS */;
+			targetProxy = 9C63853A5082BE3C4BC8694F4E1AE166 /* PBXContainerItemProxy */;
+		};
+		03DF0BD9AB89DF81DDB5AACA1F601CBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-macOS";
+			target = 353EFECD2ACC37951F025F21FD805009 /* CodableJSON-macOS */;
+			targetProxy = 60597857E92D870077094A0688E9DF02 /* PBXContainerItemProxy */;
+		};
+		5A0CEAE83B960CBADDCAA89C0CDF92B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-iOS";
+			target = AB9E062EF7F6F94C5D2795655EA824D3 /* CodableJSON-iOS */;
+			targetProxy = EC3FF5652BBB49327DF0FD924CDDD6C9 /* PBXContainerItemProxy */;
+		};
+		A7A051672C8F95100B9CE721E578C0B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-iOS";
+			target = AB9E062EF7F6F94C5D2795655EA824D3 /* CodableJSON-iOS */;
+			targetProxy = D8A16DE37EC36862ED74EBCF3E92F3A7 /* PBXContainerItemProxy */;
+		};
+		C3568FBFD9DADBD548D7F1C4E8DB4C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-tvOS";
+			target = 9A5056AEB861FF53B2F8A623366968EF /* CodableJSON-tvOS */;
+			targetProxy = 2C2E2B124547B4F88BC9B6C4FD199B1B /* PBXContainerItemProxy */;
+		};
+		E26F46D961C656E8B0145772E88F6270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-watchOS";
+			target = 9E9BB0D0899E75CBEB1CE98940D89199 /* CodableJSON-watchOS */;
+			targetProxy = 30FEFDCED180883EB1745D4574810696 /* PBXContainerItemProxy */;
+		};
+		EAE8782B9F5CE7454CE7EE84829E2A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CodableJSON-macOS";
+			target = 353EFECD2ACC37951F025F21FD805009 /* CodableJSON-macOS */;
+			targetProxy = AA27C2299E0D0CD176CBEFD2ED978B99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F7F711F99100726523BFA5E474BB9A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC895C1C1CEDDD2A54242AAFE66D0FF /* CodableJSON-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18DB6AE2F9FD406BD74E3B73FA96D350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933CA7FD1901DC418392DA915F5BAE9F /* CodableJSON-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B3A3CFDE90475F8D6790356CABE68DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8769DB6ACB5715E073DDD2371D31D84 /* Pods-CodableGeoJSON-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS/Pods-CodableGeoJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS/Pods-CodableGeoJSON-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2072FFBDE4A41319152F4266A48218C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CE58D002206A64BC36A3624FEFF7FD /* Pods-CodableGeoJSON-tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS/Pods-CodableGeoJSON-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS/Pods-CodableGeoJSON-tvOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F347A07C09A2B1DA801A8759AA080A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		31C5744C0EA252E3890E2DD0B381F33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B336E584780D7545DC71F1BF0A75C31B /* Pods-CodableGeoJSON-watchOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-watchOS/Pods-CodableGeoJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-watchOS/Pods-CodableGeoJSON-watchOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		328CE94F6A348A4B8B2F2EBAD70879CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6486A31AAC4C47BBE1E49262C7C8606F /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38DE5EA5E20F5AD47C64733D3D0D7415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0999833510F8DC6E4B80A3E33ED83376 /* Pods-CodableGeoJSON.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON/Pods-CodableGeoJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON/Pods-CodableGeoJSON.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42990BEDA2C980124D3D592A71BD5F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		486D6C68069EE95D6528EAFD7FACD092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3DFD275CEA2B4E00CB2E0EB036EF43 /* CodableJSON-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EF15BBC383DE7FA4E0FB2AC537B92F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933CA7FD1901DC418392DA915F5BAE9F /* CodableJSON-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-macOS/CodableJSON-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		666FEA701A7CAB16D0DB2C0A3B75B8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3DFD275CEA2B4E00CB2E0EB036EF43 /* CodableJSON-tvOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-tvOS/CodableJSON-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B339B66AAD61713D5FBF3351D0C8FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0B8E2762BB7F8111B5EDDB40A1DC99 /* Pods-CodableGeoJSON-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS/Pods-CodableGeoJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS/Pods-CodableGeoJSON-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CB284D784542A0616476B2B28D771B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 388F7E314220E11765286AE6B67CEE70 /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		767A57E291F66BE475A93D290C8D8BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593189F1B9BA570EE9298949F9E19634 /* CodableJSON-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		937A3B00985AB99967DC7E91E8E11655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC895C1C1CEDDD2A54242AAFE66D0FF /* CodableJSON-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-iOS/CodableJSON-iOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		941C349723A19654A7CDA70AA1D4330A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E0B5C55F50745C2C47A513BAB1DD3D /* Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests/Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96F99FDF06FB4170B910749B69E28111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593189F1B9BA570EE9298949F9E19634 /* CodableJSON-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CodableJSON-watchOS/CodableJSON-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = CodableJSON;
+				PRODUCT_NAME = CodableJSON;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C470B07D902B1408CEA534EAA5B9F26F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1837674341E1B63F60AED4D43644A0B0 /* Pods-CodableGeoJSON-CodableGeoJSONTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-CodableGeoJSONTests/Pods-CodableGeoJSON-CodableGeoJSONTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-CodableGeoJSONTests/Pods-CodableGeoJSON-CodableGeoJSONTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCECD10D2B3FB28EDE2622C327A7DDAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F3FC3B86603897134A7FFC2488BC559 /* Pods-CodableGeoJSON-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-watchOS/Pods-CodableGeoJSON-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-watchOS/Pods-CodableGeoJSON-watchOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D4D5903F9D4DFD3B42055EE18CAA0E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2992628F32B58B97EF3D0194615A84F /* Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests/Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D52CBC2D1F812E40360ECB417AC07E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E57BB1316E6DE3493268D96D7376471D /* Pods-CodableGeoJSON-tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS/Pods-CodableGeoJSON-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-tvOS/Pods-CodableGeoJSON-tvOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6286CBCBF2C7346AC0A454693BB3DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31EE27D8CAC40C1431284DE6B53F6DF2 /* Pods-CodableGeoJSON.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON/Pods-CodableGeoJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON/Pods-CodableGeoJSON.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5D48ABDF3FB922104226FF08FDBF798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFECDF59B51D8C6B0917529FAEB3D7A /* Pods-CodableGeoJSON-CodableGeoJSONTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-CodableGeoJSON-CodableGeoJSONTests/Pods-CodableGeoJSON-CodableGeoJSONTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodableGeoJSON-CodableGeoJSONTests/Pods-CodableGeoJSON-CodableGeoJSONTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		146B134171381B20C9B927722AE4CC96 /* Build configuration list for PBXNativeTarget "CodableJSON-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F99FDF06FB4170B910749B69E28111 /* Debug */,
+				767A57E291F66BE475A93D290C8D8BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30649B1D56EF61738A70E3975805107C /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52CBC2D1F812E40360ECB417AC07E63 /* Debug */,
+				2072FFBDE4A41319152F4266A48218C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F347A07C09A2B1DA801A8759AA080A1 /* Debug */,
+				42990BEDA2C980124D3D592A71BD5F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D4E98D644C72A022C023A345F0CE32 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCECD10D2B3FB28EDE2622C327A7DDAE /* Debug */,
+				31C5744C0EA252E3890E2DD0B381F33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85DCCCB7ED5E2D89AC50C57D48B6D6CA /* Build configuration list for PBXNativeTarget "CodableJSON-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				486D6C68069EE95D6528EAFD7FACD092 /* Debug */,
+				666FEA701A7CAB16D0DB2C0A3B75B8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		946DC52BA766020AB3E038E09616DA57 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-CodableGeoJSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D48ABDF3FB922104226FF08FDBF798 /* Debug */,
+				C470B07D902B1408CEA534EAA5B9F26F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A918A786F9ADD603EE3E8EBFAC8F3189 /* Build configuration list for PBXNativeTarget "CodableJSON-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F7F711F99100726523BFA5E474BB9A4 /* Debug */,
+				937A3B00985AB99967DC7E91E8E11655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C33D2C6109CCFC75E89AF5EA1D472002 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B339B66AAD61713D5FBF3351D0C8FE4 /* Debug */,
+				1B3A3CFDE90475F8D6790356CABE68DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74FEBBABAC72F7A71D964CB1B956354 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D5903F9D4DFD3B42055EE18CAA0E9D /* Debug */,
+				6CB284D784542A0616476B2B28D771B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73EF101BDBF67A5981F06B674BEFF1D /* Build configuration list for PBXNativeTarget "CodableJSON-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF15BBC383DE7FA4E0FB2AC537B92F6 /* Debug */,
+				18DB6AE2F9FD406BD74E3B73FA96D350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59F59B0DE010DB06A57FF4FB9B50F81 /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON-tvOS-CodableGeoJSON-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941C349723A19654A7CDA70AA1D4330A /* Debug */,
+				328CE94F6A348A4B8B2F2EBAD70879CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81910A070CE5B8371AF560CB6A9CF7E /* Build configuration list for PBXNativeTarget "Pods-CodableGeoJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6286CBCBF2C7346AC0A454693BB3DCB /* Debug */,
+				38DE5EA5E20F5AD47C64733D3D0D7415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

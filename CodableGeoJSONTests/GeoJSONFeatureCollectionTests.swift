@@ -7,7 +7,13 @@
 //
 
 import XCTest
+#if os(macOS)
 @testable import CodableGeoJSON
+#elseif os(iOS)
+@testable import CodableGeoJSON_iOS
+#elseif os(tvOS)
+@testable import CodableGeoJSON_tvOS
+#endif
 
 class GeoJSONFeatureCollectionTests: XCTestCase {
     func testFeatureCollection() {
