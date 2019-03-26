@@ -6,8 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
-
 /// The fundamental geometry construct.
 public struct GeoJSONPosition: Equatable {
     /// The longitudinal coordinate.

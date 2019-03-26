@@ -6,8 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
-
 /// A spatially bounded entity.
 public struct GeoJSONFeature<Geometry, Properties>: Codable where Geometry: GeoJSONGeometry, Properties: Codable {
     /// The identifier of the feature. May be either a string or integer.

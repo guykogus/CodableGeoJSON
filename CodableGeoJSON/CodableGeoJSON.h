@@ -6,7 +6,7 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@import Foundation;
 
 //! Project version number for CodableGeoJSON.
 FOUNDATION_EXPORT double CodableGeoJSONVersionNumber;

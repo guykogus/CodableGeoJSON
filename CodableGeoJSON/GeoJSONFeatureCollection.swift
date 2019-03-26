@@ -6,8 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
-
 /// A list of `GeoJSONFeature` objects.
 public struct GeoJSONFeatureCollection<Geometry, Properties>: Codable where Geometry: GeoJSONGeometry, Properties: Codable {
     public typealias Feature = GeoJSONFeature<Geometry, Properties>

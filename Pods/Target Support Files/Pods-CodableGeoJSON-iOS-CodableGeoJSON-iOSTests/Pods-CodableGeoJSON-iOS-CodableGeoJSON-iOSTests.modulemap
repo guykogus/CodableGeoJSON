@@ -1,6 +1,0 @@
-framework module Pods_CodableGeoJSON_iOS_CodableGeoJSON_iOSTests {
-  umbrella header "Pods-CodableGeoJSON-iOS-CodableGeoJSON-iOSTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

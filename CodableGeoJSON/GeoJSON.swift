@@ -6,7 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
 import CodableJSON
 
 /// A GeoJSON type.
@@ -18,7 +17,7 @@ public enum GeoJSON: Equatable {
         /// The geometry of the feature.
         public let geometry: Geometry?
         /// Additional properties of the feature.
-        public let properties: JSON?
+        public let properties: CodableJSON.JSON?
     }
 
     /// A list of `Feature` objects.

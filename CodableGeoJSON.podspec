@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'CodableGeoJSON'
-  s.version = '1.1.1'
+  s.version = '1.1.3'
   s.summary = 'A Swift implementation of GeoJSON'
   s.description = <<-DESC
   This implementation of GeoJSON conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.source = { git: 'https://github.com/guykogus/CodableGeoJSON.git', tag: s.version.to_s }
   s.source_files = 'CodableGeoJSON/*.swift'
-  s.dependency 'CodableJSON'
+  s.dependency 'CodableJSON', '~> 1.1'
 end

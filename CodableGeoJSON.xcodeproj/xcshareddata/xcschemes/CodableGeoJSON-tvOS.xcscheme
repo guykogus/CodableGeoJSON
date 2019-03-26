@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F80A6E4F2243947200A7CEF0"
-               BuildableName = "CodableGeoJSON_tvOS.framework"
+               BuildableName = "CodableGeoJSON.framework"
                BlueprintName = "CodableGeoJSON-tvOS"
                ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F80A6E4F2243947200A7CEF0"
-            BuildableName = "CodableGeoJSON_tvOS.framework"
+            BuildableName = "CodableGeoJSON.framework"
             BlueprintName = "CodableGeoJSON-tvOS"
             ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F80A6E4F2243947200A7CEF0"
-            BuildableName = "CodableGeoJSON_tvOS.framework"
+            BuildableName = "CodableGeoJSON.framework"
             BlueprintName = "CodableGeoJSON-tvOS"
             ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F80A6E4F2243947200A7CEF0"
-            BuildableName = "CodableGeoJSON_tvOS.framework"
+            BuildableName = "CodableGeoJSON.framework"
             BlueprintName = "CodableGeoJSON-tvOS"
             ReferencedContainer = "container:CodableGeoJSON.xcodeproj">
          </BuildableReference>

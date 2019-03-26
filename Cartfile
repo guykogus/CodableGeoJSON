@@ -1,1 +1,1 @@
-github "guykogus/CodableJSON"
+github "guykogus/CodableJSON" ~> 1.1

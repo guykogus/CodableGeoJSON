@@ -6,8 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
-
 /// The identifier value of a feature
 public enum GeoJSONFeatureIdentifier: Equatable, Hashable {
     /// The identifier as a string value.

@@ -6,8 +6,6 @@
 //  Copyright © 2018 Guy Kogus. All rights reserved.
 //
 
-import Foundation
-
 /// A region of space.
 public protocol GeoJSONGeometry: Codable, Equatable {}
 
