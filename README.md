@@ -2,6 +2,7 @@
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CodableGeoJSON.svg)](https://cocoapods.org)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 
 This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
 
@@ -151,11 +152,45 @@ func handleGeometry(_ geometry: GeoJSONGeometry?) {
 
 # Installation
 
-CodableGeoJSON is available through [Cocoapods](https://cocoapods.org). To install, add to your Podfile:
+<details>
+<summary>CocoaPods</summary>
+</br>
+<p>To integrate CodableGeoJSON into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
+<pre><code class="ruby language-ruby">pod 'CodableGeoJSON'</code></pre>
+</details>
 
-```
-pod 'CodableGeoJSON'
-```
+<details>
+<summary>Carthage</summary>
+</br>
+<p>To integrate CodableGeoJSON into your Xcode project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
+<pre><code class="ogdl language-ogdl">github "guykogus/CodableGeoJSON"</code></pre>
+</details>
+
+<details>
+<summary>Swift Package Manager</summary>
+</br>
+<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install <code>CodableGeoJSON</code> by adding the proper description to your <code>Package.swift</code> file:</p>
+
+<pre><code class="swift language-swift">import PackageDescription
+
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    targets: [],
+    dependencies: [
+        .package(url: "https://github.com/guykogus/CodableGeoJSON.git", from: "1.2.0")
+    ]
+)
+</code></pre>
+
+<p>Next, add <code>CodableGeoJSON</code> to your targets dependencies like so:</p>
+<pre><code class="swift language-swift">.target(
+    name: "YOUR_TARGET_NAME",
+    dependencies: [
+        "CodableGeoJSON",
+    ]
+),</code></pre>
+<p>Then run <code>swift package update</code>.</p>
+</details>
 
 # License
 
