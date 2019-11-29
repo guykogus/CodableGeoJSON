@@ -18,6 +18,8 @@ public enum GeoJSON: Equatable {
         public let geometry: Geometry?
         /// Additional properties of the feature.
         public let properties: CodableJSON.JSON?
+        /// The type of the feature.
+        public let type: String
     }
 
     /// A list of `Feature` objects.
