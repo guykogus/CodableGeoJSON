@@ -363,7 +363,7 @@ class GeoJSONGeometryTests: XCTestCase {
             GeoJSON.Geometry.lineString(coordinates: [
                 GeoJSONPosition(longitude: 101, latitude: -101),
                 GeoJSONPosition(longitude: 102, latitude: -102)
-                ])
+            ])
         ]
 
         XCTAssertEqual(geometry(from: geometryCollectionString),

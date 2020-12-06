@@ -7,7 +7,7 @@
 //
 
 /// The fundamental geometry construct.
-public struct GeoJSONPosition: Equatable {
+public struct GeoJSONPosition: Hashable {
     /// The longitudinal coordinate.
     public let longitude: Double
     /// The latitudinal coordinate.

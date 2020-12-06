@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import CodableJSON
 @testable import CodableGeoJSON
 
 class GeoJSONFeatureTests: XCTestCase {
@@ -31,12 +32,17 @@ class GeoJSONFeatureTests: XCTestCase {
 """
         let decoder = JSONDecoder()
         do {
-            let feature = try decoder.decode(GeoJSON.Feature.self, from: string.data(using: .utf8)!)
+            let data = string.data(using: .utf8)!
+            let feature = try decoder.decode(GeoJSON.Feature.self, from: data)
             XCTAssertEqual(feature,
-                           GeoJSON.Feature(id: nil,
-                                           geometry: GeoJSON.Geometry.point(coordinates: GeoJSONPosition(longitude: 102, latitude: 0.5)),
+                           GeoJSON.Feature(geometry: GeoJSON.Geometry.point(coordinates: GeoJSONPosition(longitude: 102, latitude: 0.5)),
                                            properties: ["prop0": "value0",
-                                                        "prop1": ["this": "that"]]))
+                                                        "prop1": ["this": "that"]],
+                                           id: nil))
+
+            // Test encoding
+            let jsonObject = try JSONSerialization.jsonObject(with: data)
+            try XCTAssertEqual(JSON(encodableValue: feature), JSON(rawValue: jsonObject))
         } catch {
             XCTFail("GeoJSONFeature decoding error: \(error)")
         }
@@ -51,9 +57,14 @@ class GeoJSONFeatureTests: XCTestCase {
 """
         let decoder = JSONDecoder()
         do {
-            let feature = try decoder.decode(GeoJSON.Feature.self, from: string.data(using: .utf8)!)
+            let data = string.data(using: .utf8)!
+            let feature = try decoder.decode(GeoJSON.Feature.self, from: data)
             XCTAssertEqual(feature,
-                           GeoJSON.Feature(id: nil, geometry: nil, properties: nil))
+                           GeoJSON.Feature(geometry: nil, properties: nil, id: nil))
+
+            // Test encoding
+            let jsonObject = try JSONSerialization.jsonObject(with: data)
+            try XCTAssertEqual(JSON(encodableValue: feature), JSON(rawValue: jsonObject))
         } catch {
             XCTFail("GeoJSONFeature decoding error: \(error)")
         }
@@ -71,7 +82,7 @@ class GeoJSONFeatureTests: XCTestCase {
         do {
             let feature1 = try decoder.decode(GeoJSON.Feature.self, from: stringIdentifier.data(using: .utf8)!)
             XCTAssertEqual(feature1,
-                           GeoJSON.Feature(id: "foo", geometry: nil, properties: nil))
+                           GeoJSON.Feature(geometry: nil, properties: nil, id: "foo"))
         } catch {
             XCTFail("GeoJSONFeature decoding error: \(error)")
         }
@@ -86,7 +97,7 @@ class GeoJSONFeatureTests: XCTestCase {
         do {
             let feature2 = try decoder.decode(GeoJSON.Feature.self, from: intIdentifier.data(using: .utf8)!)
             XCTAssertEqual(feature2,
-                           GeoJSON.Feature(id: 2, geometry: nil, properties: nil))
+                           GeoJSON.Feature(geometry: nil, properties: nil, id: 2))
         } catch {
             XCTFail("GeoJSONFeature decoding error: \(error)")
         }

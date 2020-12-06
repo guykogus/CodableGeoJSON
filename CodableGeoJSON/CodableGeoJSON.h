@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double CodableGeoJSONVersionNumber;
 FOUNDATION_EXPORT const unsigned char CodableGeoJSONVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CodableGeoJSON/PublicHeader.h>
-
-

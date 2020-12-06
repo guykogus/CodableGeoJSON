@@ -7,7 +7,7 @@
 //
 
 /// The identifier value of a feature
-public enum GeoJSONFeatureIdentifier: Equatable, Hashable {
+public enum GeoJSONFeatureIdentifier: Hashable {
     /// The identifier as a string value.
     case string(value: String)
     /// The identifier as an integer value.
@@ -17,18 +17,12 @@ public enum GeoJSONFeatureIdentifier: Equatable, Hashable {
 // MARK: - Codable
 
 extension GeoJSONFeatureIdentifier: Codable {
-    private enum Errors: Error {
-        case unknownType
-    }
-
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         if let value = try? container.decode(String.self) {
             self = .string(value: value)
-        } else if let value = try? container.decode(Int.self) {
-            self = .int(value: value)
         } else {
-            throw Errors.unknownType
+            self = .int(value: try container.decode(Int.self))
         }
     }
 

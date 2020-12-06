@@ -7,7 +7,7 @@
 //
 
 /// A region of space.
-public protocol GeoJSONGeometry: Codable, Equatable {}
+public protocol GeoJSONGeometry: Codable, Hashable {}
 
 /// A single position.
 public struct PointGeometry: GeoJSONGeometry {

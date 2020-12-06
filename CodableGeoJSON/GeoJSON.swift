@@ -9,25 +9,25 @@
 import CodableJSON
 
 /// A GeoJSON type.
-public enum GeoJSON: Equatable {
+public enum GeoJSON: Hashable {
     /// A spatially bounded entity.
-    public struct Feature: Codable, Equatable {
-        /// The identifier of the feature. May be either a string or integer.
-        public let id: GeoJSONFeatureIdentifier?
+    public struct Feature: Hashable {
         /// The geometry of the feature.
         public let geometry: Geometry?
         /// Additional properties of the feature.
         public let properties: CodableJSON.JSON?
+        /// The identifier of the feature. May be either a string or integer.
+        public let id: GeoJSONFeatureIdentifier?
     }
 
     /// A list of `Feature` objects.
-    public struct FeatureCollection: Codable, Equatable {
+    public struct FeatureCollection: Hashable {
         /// The features of the collection.
         public let features: [Feature]
     }
 
     /// A region of space.
-    public enum Geometry: Equatable {
+    public enum Geometry: Hashable {
         /// A single position.
         case point(coordinates: PointGeometry.Coordinates)
         /// An array of positions.
@@ -52,15 +52,17 @@ public enum GeoJSON: Equatable {
     case geometry(geometry: Geometry, boundingBox: [Double]?)
 }
 
+// MARK: - Codable
+
 extension GeoJSON: Codable {
+    public enum GeoJSONType: String, Codable {
+        case feature = "Feature"
+        case featureCollection = "FeatureCollection"
+    }
+
     private enum CodingKeys: String, CodingKey {
         case type
         case bbox
-    }
-
-    private enum ObjectType: String, Codable {
-        case feature = "Feature"
-        case featureCollection = "FeatureCollection"
     }
 
     public init(from decoder: Decoder) throws {
@@ -68,9 +70,9 @@ extension GeoJSON: Codable {
         let type = try container.decode(String.self, forKey: .type)
         let boundingBox = try container.decodeIfPresent([Double].self, forKey: .bbox)
         switch type {
-        case ObjectType.feature.rawValue:
+        case GeoJSONType.feature.rawValue:
             self = .feature(feature: try Feature(from: decoder), boundingBox: boundingBox)
-        case ObjectType.featureCollection.rawValue:
+        case GeoJSONType.featureCollection.rawValue:
             self = .featureCollection(featureCollection: try FeatureCollection(from: decoder), boundingBox: boundingBox)
         default:
             self = .geometry(geometry: try Geometry(from: decoder), boundingBox: boundingBox)
@@ -79,7 +81,6 @@ extension GeoJSON: Codable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(type, forKey: .type)
         switch self {
         case .feature(let feature, let boundingBox):
             try container.encodeIfPresent(boundingBox, forKey: .bbox)
@@ -92,21 +93,56 @@ extension GeoJSON: Codable {
             try geometry.encode(to: encoder)
         }
     }
+}
 
-    private var type: String {
-        switch self {
-        case .feature(_, _):
-            return ObjectType.feature.rawValue
-        case .featureCollection(_, _):
-            return ObjectType.featureCollection.rawValue
-        case .geometry(let geometry, _):
-            return geometry.type.rawValue
-        }
+extension GeoJSON.Feature: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case type
+        case geometry
+        case properties
+        case id
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let type = try container.decode(GeoJSON.GeoJSONType.self, forKey: .type)
+        assert(type == GeoJSON.GeoJSONType.feature)
+        geometry = try container.decodeIfPresent(GeoJSON.Geometry.self, forKey: .geometry)
+        properties = try container.decodeIfPresent(CodableJSON.JSON.self, forKey: .properties)
+        id = try container.decodeIfPresent(GeoJSONFeatureIdentifier.self, forKey: .id)
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(GeoJSON.GeoJSONType.feature, forKey: .type)
+        try container.encodeIfPresent(geometry, forKey: .geometry)
+        try container.encodeIfPresent(properties, forKey: .properties)
+        try container.encodeIfPresent(id, forKey: .id)
+    }
+}
+
+extension GeoJSON.FeatureCollection: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case type
+        case features
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let type = try container.decode(GeoJSON.GeoJSONType.self, forKey: .type)
+        assert(type == GeoJSON.GeoJSONType.featureCollection)
+        features = try container.decode([GeoJSON.Feature].self, forKey: .features)
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(GeoJSON.GeoJSONType.featureCollection, forKey: .type)
+        try container.encode(features, forKey: .features)
     }
 }
 
 extension GeoJSON.Geometry: Codable {
-    fileprivate enum GeometryType: String, Codable {
+    public enum GeometryType: String, Codable {
         case point = "Point"
         case multiPoint = "MultiPoint"
         case lineString = "LineString"
@@ -145,7 +181,7 @@ extension GeoJSON.Geometry: Codable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(type, forKey: .type)
+        try container.encode(geometryType, forKey: .type)
         switch self {
         case .point(let coordinates):
             try container.encode(coordinates, forKey: .coordinates)
@@ -164,21 +200,23 @@ extension GeoJSON.Geometry: Codable {
         }
     }
 
-    fileprivate var type: GeometryType {
+    public var type: String { geometryType.rawValue }
+
+    private var geometryType: GeometryType {
         switch self {
-        case .point(_):
+        case .point:
             return GeometryType.point
-        case .multiPoint(_):
+        case .multiPoint:
             return GeometryType.multiPoint
-        case .lineString(_):
+        case .lineString:
             return GeometryType.lineString
-        case .multiLineString(_):
+        case .multiLineString:
             return GeometryType.multiLineString
-        case .polygon(_):
+        case .polygon:
             return GeometryType.polygon
-        case .multiPolygon(_):
+        case .multiPolygon:
             return GeometryType.multiPolygon
-        case .geometryCollection(_):
+        case .geometryCollection:
             return GeometryType.geometryCollection
         }
     }

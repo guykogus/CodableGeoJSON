@@ -10,9 +10,9 @@ This library includes both a dynamic and static variant of the GeoJSON models. T
 
 # Requirements
 
-- iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10.1+
-- Swift 4.2+
+- iOS 9.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 # Usage
 

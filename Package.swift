@@ -10,7 +10,7 @@ let package = Package(
             targets: ["CodableGeoJSON"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/guykogus/CodableJSON.git", from: "1.2.0"),
+        .package(url: "https://github.com/guykogus/CodableJSON.git", from: "2.0.0"),
     ],
     targets: [
         .target(
