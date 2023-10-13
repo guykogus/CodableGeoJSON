@@ -3,10 +3,10 @@
 //  CodableGeoJSON
 //
 //  Created by Guy Kogus on 23/12/2018.
-//  Copyright © 2018 Guy Kogus. All rights reserved.
+//  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 //! Project version number for CodableGeoJSON.
 FOUNDATION_EXPORT double CodableGeoJSONVersionNumber;

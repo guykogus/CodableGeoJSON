@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:CodableGeoJSON.xcodeproj">
+      location = "group:CodableGeoJSON.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/CodableJSON/CodableJSON.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.8
 
 import PackageDescription
 
@@ -10,16 +10,28 @@ let package = Package(
             targets: ["CodableGeoJSON"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/guykogus/CodableJSON.git", from: "2.0.0"),
+        .package(url: "https://github.com/guykogus/CodableJSON.git", from: "3.0.0"),
     ],
     targets: [
         .target(
             name: "CodableGeoJSON",
             dependencies: ["CodableJSON"],
-            path: "CodableGeoJSON"),
+            path: "CodableGeoJSON",
+            swiftSettings: [
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("ForwardTrailingClosures"),
+            ]
+        ),
         .testTarget(
             name: "CodableGeoJSONTests",
             dependencies: ["CodableGeoJSON"],
-            path: "CodableGeoJSONTests"),
+            path: "CodableGeoJSONTests",
+            swiftSettings: [
+                .enableUpcomingFeature("ConciseMagicFile"),
+                .enableUpcomingFeature("ExistentialAny"),
+                .enableUpcomingFeature("ForwardTrailingClosures"),
+            ]
+        ),
     ]
 )

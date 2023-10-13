@@ -3,7 +3,7 @@
 //  PassengerApp
 //
 //  Created by Guy Kogus on 21/12/2018.
-//  Copyright © 2018 Guy Kogus. All rights reserved.
+//  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
 import CodableJSON
@@ -65,7 +65,7 @@ extension GeoJSON: Codable {
         case bbox
     }
 
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(String.self, forKey: .type)
         let boundingBox = try container.decodeIfPresent([Double].self, forKey: .bbox)
@@ -79,7 +79,7 @@ extension GeoJSON: Codable {
         }
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
         case .feature(let feature, let boundingBox):
@@ -103,7 +103,7 @@ extension GeoJSON.Feature: Codable {
         case id
     }
 
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(GeoJSON.GeoJSONType.self, forKey: .type)
         assert(type == GeoJSON.GeoJSONType.feature)
@@ -112,7 +112,7 @@ extension GeoJSON.Feature: Codable {
         id = try container.decodeIfPresent(GeoJSONFeatureIdentifier.self, forKey: .id)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(GeoJSON.GeoJSONType.feature, forKey: .type)
         try container.encodeIfPresent(geometry, forKey: .geometry)
@@ -127,14 +127,14 @@ extension GeoJSON.FeatureCollection: Codable {
         case features
     }
 
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(GeoJSON.GeoJSONType.self, forKey: .type)
         assert(type == GeoJSON.GeoJSONType.featureCollection)
         features = try container.decode([GeoJSON.Feature].self, forKey: .features)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(GeoJSON.GeoJSONType.featureCollection, forKey: .type)
         try container.encode(features, forKey: .features)
@@ -158,7 +158,7 @@ extension GeoJSON.Geometry: Codable {
         case geometries
     }
 
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let type = try container.decode(GeometryType.self, forKey: .type)
         switch type {
@@ -179,7 +179,7 @@ extension GeoJSON.Geometry: Codable {
         }
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(geometryType, forKey: .type)
         switch self {

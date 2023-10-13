@@ -1,7 +1,6 @@
 # CodableGeoJSON
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CodableGeoJSON.svg)](https://cocoapods.org)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 
 This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
@@ -10,9 +9,9 @@ This library includes both a dynamic and static variant of the GeoJSON models. T
 
 # Requirements
 
-- iOS 9.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10.2+
-- Swift 5.0+
+- iOS 12.0+ / macOS 10.13+ / tvOS 12.0+ / watchOS 4.0+
+- Xcode 15+
+- Swift 5.8+
 
 # Usage
 
@@ -157,13 +156,6 @@ func handleGeometry(_ geometry: GeoJSONGeometry?) {
 </br>
 <p>To integrate CodableGeoJSON into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
 <pre><code class="ruby language-ruby">pod 'CodableGeoJSON'</code></pre>
-</details>
-
-<details>
-<summary>Carthage</summary>
-</br>
-<p>To integrate CodableGeoJSON into your Xcode project using <a href="https://github.com/Carthage/Carthage">Carthage</a>, specify it in your <code>Cartfile</code>:</p>
-<pre><code class="ogdl language-ogdl">github "guykogus/CodableGeoJSON"</code></pre>
 </details>
 
 <details>

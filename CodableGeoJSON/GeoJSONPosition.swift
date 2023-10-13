@@ -3,7 +3,7 @@
 //  PassengerApp
 //
 //  Created by Guy Kogus on 21/12/2018.
-//  Copyright © 2018 Guy Kogus. All rights reserved.
+//  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
 /// The fundamental geometry construct.
@@ -31,14 +31,14 @@ public struct GeoJSONPosition: Hashable {
 // MARK: - Codable
 
 extension GeoJSONPosition: Codable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         var container = try decoder.unkeyedContainer()
         longitude = try container.decode(Double.self)
         latitude = try container.decode(Double.self)
         elevation = try container.decodeIfPresent(Double.self)
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.unkeyedContainer()
         try container.encode(longitude)
         try container.encode(latitude)

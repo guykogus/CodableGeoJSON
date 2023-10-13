@@ -3,7 +3,7 @@
 //  CodableGeoJSON
 //
 //  Created by Guy Kogus on 21/12/2018.
-//  Copyright © 2018 Guy Kogus. All rights reserved.
+//  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
 /// The identifier value of a feature
@@ -17,7 +17,7 @@ public enum GeoJSONFeatureIdentifier: Hashable {
 // MARK: - Codable
 
 extension GeoJSONFeatureIdentifier: Codable {
-    public init(from decoder: Decoder) throws {
+    public init(from decoder: any Decoder) throws {
         let container = try decoder.singleValueContainer()
         if let value = try? container.decode(String.self) {
             self = .string(value: value)
@@ -26,7 +26,7 @@ extension GeoJSONFeatureIdentifier: Codable {
         }
     }
 
-    public func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: any Encoder) throws {
         var container = encoder.singleValueContainer()
         switch self {
         case .string(let value):
