@@ -9,9 +9,9 @@
 import SwifterJSON
 
 /// A GeoJSON type.
-public enum GeoJSON: Hashable {
+public enum GeoJSON: Hashable, Sendable {
     /// A spatially bounded entity.
-    public struct Feature: Hashable {
+    public struct Feature: Hashable, Sendable {
         /// The geometry of the feature.
         public let geometry: Geometry?
         /// Additional properties of the feature.
@@ -21,13 +21,13 @@ public enum GeoJSON: Hashable {
     }
 
     /// A list of `Feature` objects.
-    public struct FeatureCollection: Hashable {
+    public struct FeatureCollection: Hashable, Sendable {
         /// The features of the collection.
         public let features: [Feature]
     }
 
     /// A region of space.
-    public enum Geometry: Hashable {
+    public enum Geometry: Hashable, Sendable {
         /// A single position.
         case point(coordinates: PointGeometry.Coordinates)
         /// An array of positions.

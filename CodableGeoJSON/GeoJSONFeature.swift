@@ -7,7 +7,7 @@
 //
 
 /// A spatially bounded entity.
-public struct GeoJSONFeature<Geometry, Properties>: Codable where Geometry: GeoJSONGeometry, Properties: Codable {
+public struct GeoJSONFeature<Geometry, Properties>: Codable, Sendable where Geometry: GeoJSONGeometry, Properties: Codable, Properties: Sendable {
     /// The identifier of the feature. May be either a string or integer.
     public let id: GeoJSONFeatureIdentifier?
     /// The geometry of the feature.

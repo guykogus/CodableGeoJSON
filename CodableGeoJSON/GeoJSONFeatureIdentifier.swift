@@ -7,7 +7,7 @@
 //
 
 /// The identifier value of a feature
-public enum GeoJSONFeatureIdentifier: Hashable {
+public enum GeoJSONFeatureIdentifier: Hashable, Sendable {
     /// The identifier as a string value.
     case string(value: String)
     /// The identifier as an integer value.
