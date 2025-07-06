@@ -47,11 +47,12 @@ public struct PolygonGeometry: GeoJSONGeometry {
 
     /// The first `LinearRing` of a polygon represents its external ring.
     public var exteriorRing: Coordinates.Element? {
-        return coordinates.first
+        coordinates.first
     }
+
     /// The internal holes of the polygon. May be empty.
     public var internalRings: Coordinates.SubSequence {
-        return coordinates.dropFirst()
+        coordinates.dropFirst()
     }
 }
 

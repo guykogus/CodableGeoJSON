@@ -6,7 +6,7 @@
 //  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
-import CodableJSON
+import SwifterJSON
 
 /// A GeoJSON type.
 public enum GeoJSON: Hashable {
@@ -15,7 +15,7 @@ public enum GeoJSON: Hashable {
         /// The geometry of the feature.
         public let geometry: Geometry?
         /// Additional properties of the feature.
-        public let properties: CodableJSON.JSON?
+        public let properties: SwifterJSON.JSON?
         /// The identifier of the feature. May be either a string or integer.
         public let id: GeoJSONFeatureIdentifier?
     }
@@ -71,24 +71,24 @@ extension GeoJSON: Codable {
         let boundingBox = try container.decodeIfPresent([Double].self, forKey: .bbox)
         switch type {
         case GeoJSONType.feature.rawValue:
-            self = .feature(feature: try Feature(from: decoder), boundingBox: boundingBox)
+            self = try .feature(feature: Feature(from: decoder), boundingBox: boundingBox)
         case GeoJSONType.featureCollection.rawValue:
-            self = .featureCollection(featureCollection: try FeatureCollection(from: decoder), boundingBox: boundingBox)
+            self = try .featureCollection(featureCollection: FeatureCollection(from: decoder), boundingBox: boundingBox)
         default:
-            self = .geometry(geometry: try Geometry(from: decoder), boundingBox: boundingBox)
+            self = try .geometry(geometry: Geometry(from: decoder), boundingBox: boundingBox)
         }
     }
 
     public func encode(to encoder: any Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
-        case .feature(let feature, let boundingBox):
+        case let .feature(feature, boundingBox):
             try container.encodeIfPresent(boundingBox, forKey: .bbox)
             try feature.encode(to: encoder)
-        case .featureCollection(let featureCollection, let boundingBox):
+        case let .featureCollection(featureCollection, boundingBox):
             try container.encodeIfPresent(boundingBox, forKey: .bbox)
             try featureCollection.encode(to: encoder)
-        case .geometry(let geometry, let boundingBox):
+        case let .geometry(geometry, boundingBox):
             try container.encodeIfPresent(boundingBox, forKey: .bbox)
             try geometry.encode(to: encoder)
         }
@@ -108,7 +108,7 @@ extension GeoJSON.Feature: Codable {
         let type = try container.decode(GeoJSON.GeoJSONType.self, forKey: .type)
         assert(type == GeoJSON.GeoJSONType.feature)
         geometry = try container.decodeIfPresent(GeoJSON.Geometry.self, forKey: .geometry)
-        properties = try container.decodeIfPresent(CodableJSON.JSON.self, forKey: .properties)
+        properties = try container.decodeIfPresent(SwifterJSON.JSON.self, forKey: .properties)
         id = try container.decodeIfPresent(GeoJSONFeatureIdentifier.self, forKey: .id)
     }
 
@@ -163,19 +163,19 @@ extension GeoJSON.Geometry: Codable {
         let type = try container.decode(GeometryType.self, forKey: .type)
         switch type {
         case .point:
-            self = .point(coordinates: try container.decode(PointGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .point(coordinates: container.decode(PointGeometry.Coordinates.self, forKey: .coordinates))
         case .multiPoint:
-            self = .multiPoint(coordinates: try container.decode(MultiPointGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .multiPoint(coordinates: container.decode(MultiPointGeometry.Coordinates.self, forKey: .coordinates))
         case .lineString:
-            self = .lineString(coordinates: try container.decode(LineStringGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .lineString(coordinates: container.decode(LineStringGeometry.Coordinates.self, forKey: .coordinates))
         case .multiLineString:
-            self = .multiLineString(coordinates: try container.decode(MultiLineStringGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .multiLineString(coordinates: container.decode(MultiLineStringGeometry.Coordinates.self, forKey: .coordinates))
         case .polygon:
-            self = .polygon(coordinates: try container.decode(PolygonGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .polygon(coordinates: container.decode(PolygonGeometry.Coordinates.self, forKey: .coordinates))
         case .multiPolygon:
-            self = .multiPolygon(coordinates: try container.decode(MultiPolygonGeometry.Coordinates.self, forKey: .coordinates))
+            self = try .multiPolygon(coordinates: container.decode(MultiPolygonGeometry.Coordinates.self, forKey: .coordinates))
         case .geometryCollection:
-            self = .geometryCollection(geometries: try container.decode([GeoJSON.Geometry].self, forKey: .geometries))
+            self = try .geometryCollection(geometries: container.decode([GeoJSON.Geometry].self, forKey: .geometries))
         }
     }
 
@@ -183,19 +183,19 @@ extension GeoJSON.Geometry: Codable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(geometryType, forKey: .type)
         switch self {
-        case .point(let coordinates):
+        case let .point(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .multiPoint(let coordinates):
+        case let .multiPoint(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .lineString(let coordinates):
+        case let .lineString(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .multiLineString(let coordinates):
+        case let .multiLineString(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .polygon(let coordinates):
+        case let .polygon(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .multiPolygon(let coordinates):
+        case let .multiPolygon(coordinates):
             try container.encode(coordinates, forKey: .coordinates)
-        case .geometryCollection(let geometries):
+        case let .geometryCollection(geometries):
             try container.encode(geometries, forKey: .geometries)
         }
     }
@@ -205,19 +205,19 @@ extension GeoJSON.Geometry: Codable {
     private var geometryType: GeometryType {
         switch self {
         case .point:
-            return GeometryType.point
+            GeometryType.point
         case .multiPoint:
-            return GeometryType.multiPoint
+            GeometryType.multiPoint
         case .lineString:
-            return GeometryType.lineString
+            GeometryType.lineString
         case .multiLineString:
-            return GeometryType.multiLineString
+            GeometryType.multiLineString
         case .polygon:
-            return GeometryType.polygon
+            GeometryType.polygon
         case .multiPolygon:
-            return GeometryType.multiPolygon
+            GeometryType.multiPolygon
         case .geometryCollection:
-            return GeometryType.geometryCollection
+            GeometryType.geometryCollection
         }
     }
 }

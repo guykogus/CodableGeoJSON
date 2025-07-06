@@ -6,30 +6,30 @@
 //  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
-import XCTest
-@testable import CodableJSON
 @testable import CodableGeoJSON
+@testable import SwifterJSON
+import XCTest
 
 class GeoJSONFeatureTests: XCTestCase {
     func testFeature() {
         let string = """
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      102.0,
-      0.5
-    ]
-  },
-  "properties": {
-    "prop0": "value0",
-    "prop1": {
-      "this": "that"
-    }
-  }
-}
-"""
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              102.0,
+              0.5
+            ]
+          },
+          "properties": {
+            "prop0": "value0",
+            "prop1": {
+              "this": "that"
+            }
+          }
+        }
+        """
         let decoder = JSONDecoder()
         do {
             let data = string.data(using: .utf8)!
@@ -50,11 +50,11 @@ class GeoJSONFeatureTests: XCTestCase {
 
     func testFeatureWithNullGeometry() {
         let string = """
-{
-  "type": "Feature",
-  "geometry": null
-}
-"""
+        {
+          "type": "Feature",
+          "geometry": null
+        }
+        """
         let decoder = JSONDecoder()
         do {
             let data = string.data(using: .utf8)!
@@ -72,12 +72,12 @@ class GeoJSONFeatureTests: XCTestCase {
 
     func testFeatureWithIdsGeometry() {
         let stringIdentifier = """
-{
-  "type": "Feature",
-  "id": "foo",
-  "geometry": null
-}
-"""
+        {
+          "type": "Feature",
+          "id": "foo",
+          "geometry": null
+        }
+        """
         let decoder = JSONDecoder()
         do {
             let feature1 = try decoder.decode(GeoJSON.Feature.self, from: stringIdentifier.data(using: .utf8)!)
@@ -88,12 +88,12 @@ class GeoJSONFeatureTests: XCTestCase {
         }
 
         let intIdentifier = """
-{
-  "type": "Feature",
-  "id": 2,
-  "geometry": null
-}
-"""
+        {
+          "type": "Feature",
+          "id": 2,
+          "geometry": null
+        }
+        """
         do {
             let feature2 = try decoder.decode(GeoJSON.Feature.self, from: intIdentifier.data(using: .utf8)!)
             XCTAssertEqual(feature2,

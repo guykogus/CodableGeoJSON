@@ -1,5 +1,5 @@
 //
-//  GeoJSONCoordinate.swift
+//  GeoJSONPosition.swift
 //  PassengerApp
 //
 //  Created by Guy Kogus on 21/12/2018.
@@ -42,7 +42,7 @@ extension GeoJSONPosition: Codable {
         var container = encoder.unkeyedContainer()
         try container.encode(longitude)
         try container.encode(latitude)
-        if let elevation = elevation {
+        if let elevation {
             try container.encode(elevation)
         }
     }

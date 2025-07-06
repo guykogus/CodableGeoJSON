@@ -7,15 +7,16 @@ let package = Package(
     products: [
         .library(
             name: "CodableGeoJSON",
-            targets: ["CodableGeoJSON"]),
+            targets: ["CodableGeoJSON"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/guykogus/CodableJSON.git", from: "3.0.0"),
+        .package(url: "https://github.com/guykogus/SwifterJSON.git", from: "4.0.0"),
     ],
     targets: [
         .target(
             name: "CodableGeoJSON",
-            dependencies: ["CodableJSON"],
+            dependencies: ["SwifterJSON"],
             path: "CodableGeoJSON",
             swiftSettings: [
                 .enableUpcomingFeature("ConciseMagicFile"),

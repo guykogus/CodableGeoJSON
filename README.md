@@ -1,6 +1,5 @@
 # CodableGeoJSON
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CodableGeoJSON.svg)](https://cocoapods.org)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 
 This implementation of [GeoJSON](http://geojson.org) conforms to [rfc7946](https://tools.ietf.org/html/rfc7946) and is designed for usage with `Codable` objects.
@@ -11,7 +10,7 @@ This library includes both a dynamic and static variant of the GeoJSON models. T
 
 - iOS 12.0+ / macOS 10.13+ / tvOS 12.0+ / watchOS 4.0+
 - Xcode 15+
-- Swift 5.8+
+- Swift 5.9+
 
 # Usage
 

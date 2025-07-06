@@ -6,10 +6,10 @@
 //  Copyright © 2023 Guy Kogus. All rights reserved.
 //
 
-import XCTest
 @testable import CodableGeoJSON
+import XCTest
 
-fileprivate struct LocationProperties: Codable {
+private struct LocationProperties: Codable {
     let address: String
     let name: String
 }
@@ -19,21 +19,21 @@ class GeoJSONStaticFeatureTests: XCTestCase {
 
     func testLocationFeature() {
         let string = """
-{
-  "geometry": {
-    "coordinates": [
-      -0.452207,
-      51.471403
-    ],
-    "type": "Point"
-  },
-  "properties": {
-    "address": "Longford, Hounslow TW6 1DB, UK",
-    "name": "Heathrow Airport"
-  },
-  "type": "Feature"
-}
-"""
+        {
+          "geometry": {
+            "coordinates": [
+              -0.452207,
+              51.471403
+            ],
+            "type": "Point"
+          },
+          "properties": {
+            "address": "Longford, Hounslow TW6 1DB, UK",
+            "name": "Heathrow Airport"
+          },
+          "type": "Feature"
+        }
+        """
 
         do {
             typealias LocationFeature = GeoJSONFeature<PointGeometry, LocationProperties>
@@ -50,26 +50,26 @@ class GeoJSONStaticFeatureTests: XCTestCase {
 
     func testLocationFeatureCollection() {
         let string = """
-{
-  "features": [
-    {
-      "geometry": {
-        "coordinates": [
-          -0.452207,
-          51.471403
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "address": "Longford, Hounslow TW6 1DB, UK",
-        "name": "Heathrow Airport"
-      },
-      "type": "Feature"
-    }
-  ],
-  "type": "FeatureCollection"
-}
-"""
+        {
+          "features": [
+            {
+              "geometry": {
+                "coordinates": [
+                  -0.452207,
+                  51.471403
+                ],
+                "type": "Point"
+              },
+              "properties": {
+                "address": "Longford, Hounslow TW6 1DB, UK",
+                "name": "Heathrow Airport"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        }
+        """
 
         do {
             typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>
